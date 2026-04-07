@@ -4268,12 +4268,11 @@ body.eco-low {
    SUSTAINABILITY SLIDER (About Page)
    ======================================== */
 .sust-slider-container {
-  margin: 4rem 0 8rem;
+  margin: 4rem auto 8rem;
   position: relative;
-  padding: 2rem 0;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 2rem 5%;
+  max-width: 1100px;
+  width: 100%;
 }
 
 .sust-slider-track-wrapper {
@@ -4364,12 +4363,18 @@ body.eco-low {
   justify-content: space-between;
   position: absolute;
   top: 50%;
-  left: -50px; 
-  right: -50px;
+  left: -60px; 
+  right: -60px;
   transform: translateY(-50%);
   pointer-events: none;
   z-index: 10;
-  width: calc(100% + 100px);
+  width: calc(100% + 120px);
+}
+
+@media (max-width: 1250px) {
+  .slider-nav-btns {
+    display: none;
+  }
 }
 
 .slider-nav-btn {
