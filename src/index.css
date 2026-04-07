@@ -4363,12 +4363,20 @@ body.eco-low {
   justify-content: space-between;
   position: absolute;
   top: 50%;
-  left: -40px; 
-  right: -40px;
+  left: 20px; 
+  right: 20px;
   transform: translateY(-50%);
   pointer-events: none;
   z-index: 10;
-  width: calc(100% + 80px);
+  width: calc(100% - 40px);
+}
+
+@media (min-width: 1350px) {
+  .slider-nav-btns {
+    left: -40px;
+    right: -40px;
+    width: calc(100% + 80px);
+  }
 }
 
 @media (max-width: 1250px) {

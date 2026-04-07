@@ -97,10 +97,17 @@ const About = () => {
     }
   ];
 
-  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 1024;
+  const [isMobile, setIsMobile] = React.useState(typeof window !== 'undefined' ? window.innerWidth <= 1024 : false);
+
+  React.useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 1024);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const itemsPerPage = isMobile ? 1 : 3;
-  const maxIndex = sliderItems.length - itemsPerPage;
+  const maxIndex = Math.max(0, sliderItems.length - itemsPerPage);
 
   const nextSlide = () => {
     setCurrentIndex(prev => Math.min(prev + 1, maxIndex));
