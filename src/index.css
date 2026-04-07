@@ -4299,7 +4299,7 @@ body.eco-low {
 @media (max-width: 1024px) {
   .sust-slider-card {
     flex: 0 0 100%;
-    padding: 0 1rem;
+    padding: 0 4rem; /* Give space for arrows at the sides */
   }
 }
 
@@ -4381,7 +4381,9 @@ body.eco-low {
 
 @media (max-width: 1250px) {
   .slider-nav-btns {
-    display: none;
+    left: 10px;
+    right: 10px;
+    width: calc(100% - 20px);
   }
 }
 
