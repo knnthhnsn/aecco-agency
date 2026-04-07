@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import teemo from '../assets/teemo.avif';
 import kenneth from '../assets/kenneth.avif';
 import andreas from '../assets/andreas.avif';
+import logo from '../assets/Logo.svg';
+import pil from '../assets/pil.svg';
+import { motion, AnimatePresence } from 'framer-motion';
 
 const AboutIcon = ({ type }) => {
   if (type === 'fast') {
@@ -61,6 +64,51 @@ const About = () => {
     { title: 'Menneskelig', icon: <AboutIcon type="human" />, desc: 'UX der er intuitivt og inkluderende for alle, skabt med respekt for brugerens tid og båndbredde.' }
   ];
 
+  const sliderItems = [
+    {
+      title: "Vi beskatter os selv",
+      subtitle: "(1 % for the Planet)",
+      text: "Vi er stolte medlemmer af \"1 % for the Planet\". Det betyder, at vi hvert år donerer 1 % af vores samlede omsætning til miljøorganisatione, der arbejder for at beskytte klimaet. Det er vores faste, selvvalgte afgift til planeten."
+    },
+    {
+      title: "Et grønnere internet",
+      subtitle: "(Greening the web)",
+      text: "Vi udvikler udelukkende efter principper for bæredygtigt webdesign. Vi koder letvægtsløsninger, udregner CO2-aftrykket på alt, hvad vi bygger, og hoster alle websites på energieffektive servere, der drives af 100 % vedvarende energi."
+    },
+    {
+      title: "Plantebaseret mad",
+      subtitle: "(Plant based and healthy)",
+      text: "Kødproduktion er en massiv klimabelastning. Derfor serverer vi udelukkende plantebaseret mad til vores firmaarrangementer og kundemøder."
+    },
+    {
+      title: "Genanvendelse",
+      subtitle: "(Second hand appliances)",
+      text: "Ny elektronik koster dyrt i klimaregnskabet. Vores hardware skal ikke belaste planeten unødigt. Derfor donerer vi dem videre, til Afrika, så de får et nyt liv."
+    },
+    {
+      title: "En hjælpende hånd",
+      subtitle: "(Gratis hjælp til NGO'er)",
+      text: "Vi bruger vores digitale og visuelle kompetencer til at skabe genlyd for planeten. Derfor hjælper vi jævnligt miljøorganisationer med at producere animationer og visuelt indhold uden beregning."
+    },
+    {
+      title: "Grøn transport",
+      subtitle: "(Free city cycles & cykeldage)",
+      text: "Vi opmuntrer til grøn transport ved at stille gratis el-cykler til rådighed og holde faste \"cykeldage\", hvor vi sammen udforsker naturen og holder hjulene kørende for klimaet."
+    }
+  ];
+
+  const [currentIndex, setCurrentIndex] = React.useState(0);
+  const itemsPerPage = isMobile ? 1 : 3;
+  const maxIndex = sliderItems.length - itemsPerPage;
+
+  const nextSlide = () => {
+    setCurrentIndex(prev => Math.min(prev + 1, maxIndex));
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex(prev => Math.max(prev - 1, 0));
+  };
+
   const [scrollProgress, setScrollProgress] = React.useState(0);
   const containerRef = React.useRef(null);
 
@@ -103,6 +151,53 @@ const About = () => {
               æcco er født ud fra en vision om, at digital vækst ikke behøver koste planeten. 
               Vi fjerner vægten fra de eksisterende løsninger, optimerer den digitale puls og skaber løsninger, der giver genlyd hos dem, der betyder mest.
             </p>
+          </div>
+        </section>
+
+        {/* Sustainability Slider */}
+        <section className="sust-slider-container">
+          <div className="sust-slider-track-wrapper">
+            <div className="slider-nav-btns">
+              <button 
+                className={`slider-nav-btn prev ${currentIndex === 0 ? 'disabled' : ''}`} 
+                onClick={prevSlide}
+                disabled={currentIndex === 0}
+              >
+                <img src={pil} alt="prev" style={{ transform: 'rotate(180deg)', width: '20px' }} />
+              </button>
+              <button 
+                className={`slider-nav-btn next ${currentIndex >= maxIndex ? 'disabled' : ''}`} 
+                onClick={nextSlide}
+                disabled={currentIndex >= maxIndex}
+              >
+                <img src={pil} alt="next" style={{ width: '20px' }} />
+              </button>
+            </div>
+
+            <motion.div 
+              className="sust-slider-track"
+              animate={{ x: `-${currentIndex * (100 / itemsPerPage)}%` }}
+              transition={{ type: "spring", damping: 25, stiffness: 120 }}
+            >
+              {sliderItems.map((item, index) => (
+                <div key={index} className="sust-slider-card">
+                  <div className="sust-slider-header">
+                    <h3>{item.title}</h3>
+                    <div className="sust-divider">
+                      <div className="divider-line"></div>
+                      <div className="divider-logo">
+                        <img src={logo} alt="æcco" />
+                      </div>
+                      <div className="divider-line"></div>
+                    </div>
+                  </div>
+                  <div className="sust-slider-content">
+                    <p className="sust-subtitle">{item.subtitle}</p>
+                    <p className="sust-text">{item.text}</p>
+                  </div>
+                </div>
+              ))}
+            </motion.div>
           </div>
         </section>
       </div>
