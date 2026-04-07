@@ -156,7 +156,6 @@ const About = () => {
 
         {/* Sustainability Slider */}
         <section className="sust-slider-container">
-          <div className="sust-slider-track-wrapper">
             <div className="slider-nav-btns">
               <button 
                 className={`slider-nav-btn prev ${currentIndex === 0 ? 'disabled' : ''}`} 
@@ -174,6 +173,7 @@ const About = () => {
               </button>
             </div>
 
+          <div className="sust-slider-track-wrapper">
             <motion.div 
               className="sust-slider-track"
               animate={{ x: `-${currentIndex * (100 / itemsPerPage)}%` }}
