@@ -4299,7 +4299,7 @@ body.eco-low {
 @media (max-width: 1024px) {
   .sust-slider-card {
     flex: 0 0 100%;
-    padding: 0 4rem; /* Give space for arrows at the sides */
+    padding: 0 3rem; /* Still more space than before, but less than 4rem */
   }
 }
 
@@ -4363,19 +4363,19 @@ body.eco-low {
   justify-content: space-between;
   position: absolute;
   top: 50%;
-  left: 20px; 
-  right: 20px;
+  left: 1rem; 
+  right: 1rem;
   transform: translateY(-50%);
   pointer-events: none;
   z-index: 10;
-  width: calc(100% - 40px);
+  width: auto;
 }
 
-@media (min-width: 1350px) {
+@media (min-width: 1250px) {
   .slider-nav-btns {
-    left: -40px;
-    right: -40px;
-    width: calc(100% + 80px);
+    left: -50px;
+    right: -50px;
+    width: calc(100% + 100px);
   }
 }
 
