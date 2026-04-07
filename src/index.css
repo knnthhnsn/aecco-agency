@@ -1083,6 +1083,164 @@ body.hide-nav .eco-toggle-bar {
     text-align: center;
     padding: 2rem 1rem;
   }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 1.2rem;
+    gap: 3rem;
+  }
+
+  .hero-headline {
+    font-size: 2.8rem;
+    line-height: 1.1;
+  }
+
+  .logo-box {
+    padding: 0.1rem 0.6rem;
+    font-size: 1.2rem;
+  }
+
+  .logo-box-icon {
+    height: 32px;
+  }
+
+  .hero-description-container {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .buy-template-btn {
+    width: 100%;
+  }
+
+  .hero-icon-large {
+    height: 48px;
+  }
+
+  .hero-social-proof {
+    justify-content: center;
+  }
+
+  .projects-layout {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .projects-heading {
+    font-size: 1.8rem;
+  }
+
+  .projects-description {
+    max-width: 100%;
+    font-size: 1rem;
+  }
+
+  .projects-info .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .process-info h2 {
+    font-size: 2.2rem;
+  }
+
+  .process-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: 30px;
+  }
+
+  .process-card h3 {
+    font-size: 1.4rem;
+  }
+
+  .process-card .card-watermark {
+    height: 32px;
+    top: 2.5rem;
+    right: 1.5rem;
+  }
+
+  .process-steps {
+    gap: 40vh;
+    padding-bottom: 20vh;
+  }
+
+  .process-card:nth-child(n) {
+    position: relative;
+    top: 0 !important;
+    margin-bottom: 2rem;
+  }
+
+  .content-block-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .block-title {
+    font-size: 2rem;
+  }
+
+  .teemo-quote-card {
+    flex-direction: column;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+
+  .quote-left {
+    padding: 2.5rem 1.5rem !important;
+  }
+
+  .quote-main-text {
+    font-size: 1.4rem !important;
+  }
+
+  .teemo-profile-img {
+    height: 300px !important;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: 30px;
+  }
+
+  .glass-panel {
+    border-radius: 25px;
+  }
+
+  .bubble-chart-container,
+  .gauge-chart-container {
+    padding: 1.5rem;
+    border-radius: 20px;
+    min-height: auto;
+  }
+
+  .bubble.active {
+    width: 110px;
+    height: 110px;
+    font-size: 1.6rem;
+  }
+
+  .bubble.maintenance {
+    width: 90px;
+    height: 90px;
+    font-size: 1.3rem;
+  }
+
+  .bubble.inactive {
+    width: 70px;
+    height: 70px;
+    font-size: 1.1rem;
+  }
 }
 
 @media (max-width: 480px) {
