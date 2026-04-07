@@ -1,0 +1,92 @@
+/* æccoo - Design Tokens */
+:root {
+  /* Colors */
+  --bg-deep-carbon: #343434;
+  --text-pure-white: #FFFFFF;
+  --text-muted-grey: #999999;
+  --accent-lumen-green: #9AD128;
+  --accent-lumen-green-glow: rgba(154, 209, 40, 0.4);
+  
+  /* Glass Variables */
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(12px) saturate(180%);
+  
+  /* Sizing / Radii */
+  --radius-xl: 24px;
+  --radius-lg: 16px;
+  --radius-organic: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  --container-max: 1200px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Base Styles */
+body {
+  background-color: var(--bg-deep-carbon);
+  color: var(--text-pure-white);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px) saturate(160%);
+  -webkit-backdrop-filter: blur(20px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel:hover {
+  border-color: var(--accent-lumen-green);
+  box-shadow: 0 0 20px var(--accent-lumen-green-glow);
+  transform: translateY(-4px);
+}
+
+/* Typography Base */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: var(--text-pure-white);
+  line-height: 1.2;
+}
+
+/* Gradient text utility – use specifically instead of globally on all tags */
+.text-gradient {
+  background: linear-gradient(to bottom, #FFFFFF, #999999);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.text-glow {
+  text-shadow: 0 0 10px var(--accent-lumen-green-glow);
+}
+
+/* Fix til statistiktallet så det står skarpt i den rigtige grønne branding-farve */
+.stats-box h3 {
+  background: none;
+  -webkit-text-fill-color: var(--accent-lumen-green);
+  text-shadow: none; /* Glød fjernet for et mere skarpt og moderne look */
+}
+
+/* Old utility removed or merged above */
+
+/* Fix for grønne accent-overskrifter der skal ignorere den globale gradient */
+.strategy-item h4, .process-step h4, .service-card h4 {
+  background: none;
+  -webkit-text-fill-color: var(--accent-lumen-green);
+  display: block;
+}
