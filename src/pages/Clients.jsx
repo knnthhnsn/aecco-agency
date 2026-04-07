@@ -5,7 +5,7 @@ import pil from '../assets/pil.svg';
 import { Link } from 'react-router-dom';
 import volume_village_img from '../assets/volume-village.avif';
 import bitcoin_basics_img from '../assets/bitcoin-basics.avif';
-import steno_museum_logo from '../assets/steno-museum-logo.avif';
+import steno_museum_logo from '../assets/Steno-Museum-logo.avif';
 import min_bornehave_logo from '../assets/min-børnehave-logo.avif';
 
 const portfolios = [
