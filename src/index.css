@@ -4282,6 +4282,7 @@ body.eco-low {
 .sust-slider-track {
   display: flex;
   width: 100%;
+  align-items: stretch;
 }
 
 .sust-slider-card {
@@ -4289,8 +4290,7 @@ body.eco-low {
   padding: 0 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 @media (max-width: 1024px) {
@@ -4301,7 +4301,7 @@ body.eco-low {
 }
 
 .sust-slider-header h3 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: #FFFFFF;
   margin-bottom: 1.5rem;
@@ -4311,7 +4311,7 @@ body.eco-low {
 .sust-divider {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1.5rem;
   width: 100%;
   margin-bottom: 2rem;
@@ -4347,20 +4347,15 @@ body.eco-low {
   line-height: 1.7;
   font-size: 1.05rem;
   max-width: 400px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .slider-nav-btns {
   display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  transform: translateY(-50%);
-  pointer-events: none;
-  z-index: 10;
-  padding: 0 1rem;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem;
 }
 
 .slider-nav-btn {

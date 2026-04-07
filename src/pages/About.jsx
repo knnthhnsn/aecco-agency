@@ -36,7 +36,7 @@ const AboutIcon = ({ type }) => {
 const About = () => {
   const team = [
     {
-      name: 'Teemo Skov Hansen',
+      name: 'Teemo',
       tag: 'UX INNOVATOR',
       title: 'Besat af den perfekte rejse',
       desc: 'Teemo stopper aldrig før hver pixel tjener et formål. Han hader unødvendig kode mere end han hader lunkent kaffe, og han sikrer at jeres brugere aldrig farer vild i det digitale vildnis.',
