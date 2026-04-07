@@ -97,6 +97,7 @@ const About = () => {
     }
   ];
 
+  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 1024;
   const [currentIndex, setCurrentIndex] = React.useState(0);
   const itemsPerPage = isMobile ? 1 : 3;
   const maxIndex = sliderItems.length - itemsPerPage;
@@ -137,7 +138,6 @@ const About = () => {
     };
   }, []);
 
-  const isMobile = typeof window !== 'undefined' && window.innerWidth <= 1024;
 
   return (
     <main className="about-page" style={{ paddingBottom: '12rem' }}>
