@@ -4290,7 +4290,7 @@ body.eco-low {
 
 .sust-slider-card {
   flex: 0 0 33.333%;
-  padding: 0 3rem; /* Mer side-padding for at undgå pil-overlap */
+  padding: 0 4rem; /* Øget padding for at sikre afstand til pilene */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -4318,7 +4318,7 @@ body.eco-low {
   justify-content: center;
   gap: 1.5rem;
   width: 100%;
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem;
 }
 
 .divider-line {
@@ -4344,6 +4344,8 @@ body.eco-low {
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
+  text-align: center;
+  width: 100%;
 }
 
 .sust-text {
@@ -4358,13 +4360,13 @@ body.eco-low {
   display: flex;
   justify-content: space-between;
   position: absolute;
-  top: 55%;
-  left: 1rem;
-  right: 1rem;
+  top: 53%;
+  left: -80px; 
+  right: -80px;
   transform: translateY(-50%);
   pointer-events: none;
   z-index: 10;
-  width: calc(100% - 2rem);
+  width: calc(100% + 160px);
 }
 
 .slider-nav-btn {
