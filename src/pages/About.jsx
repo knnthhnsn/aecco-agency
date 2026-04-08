@@ -291,12 +291,25 @@ const About = () => {
         </section>
 
 
-        <section className="about-cta" style={{ marginTop: '10rem' }}>
-          <h2>Skal vi skabe resonans for dit brand?</h2>
-          <p style={{ marginBottom: '2rem', opacity: 0.8 }}>Start jeres rejse mod et mere bæredygtigt website i dag.</p>
-          <Link to="/contact" className="cta-button-large">
-            Lad os tale sammen
-          </Link>
+        <section className="about-cta">
+          <div className="cta-container">
+            <div className="cta-left">
+              <h2 className="cta-heading">Skal vi skabe resonans for dit brand ?</h2>
+              <p className="cta-subtext">Start jeres rejse mod et mere bæredygtigt website idag</p>
+              <Link to="/contact" className="cta-link-btn">
+                Kontakt os <span className="arrow">→</span>
+              </Link>
+            </div>
+            <div className="cta-right">
+              <div className="cta-chat-icon">
+                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 20C10 14.4772 14.4772 10 20 10H100C105.523 10 110 14.4772 110 20V80C110 85.5228 105.523 90 100 90H80L55 110L55 90H20C14.4772 90 10 85.5228 10 80V20Z" stroke="currentColor" strokeWidth="8" strokeLinejoin="round"/>
+                  <path d="M30 35H90" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
+                  <path d="M30 55H70" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
+                </svg>
+              </div>
+            </div>
+          </div>
         </section>
       </div>
     </main>

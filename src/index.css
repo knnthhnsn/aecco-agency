@@ -4381,9 +4381,9 @@ body.eco-low {
 
 @media (max-width: 1250px) {
   .slider-nav-btns {
-    left: 10px;
-    right: 10px;
-    width: calc(100% - 20px);
+    left: 1rem;
+    right: 1rem;
+    width: auto;
   }
 }
 
@@ -4416,8 +4416,87 @@ body.eco-low {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-.sust-slider-container {
-   max-width: 1400px;
-   margin-left: auto;
-   margin-right: auto;
+/* About CTA New Design */
+.about-cta {
+  margin: 10rem 0;
+  padding: 0 5%;
+}
+
+.cta-container {
+  background: #808080;
+  border-radius: 60px;
+  padding: 4rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-left {
+  flex: 1;
+}
+
+.cta-heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.cta-subtext {
+  font-size: 1.1rem;
+  color: white;
+  opacity: 0.9;
+  margin-bottom: 2.5rem;
+}
+
+.cta-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--accent-lumen-green);
+  color: var(--primary-bg);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+.cta-link-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.1);
+}
+
+.cta-right {
+  flex: 0 0 150px;
+}
+
+.cta-chat-icon {
+  width: 150px;
+  height: 150px;
+  color: var(--accent-lumen-green);
+}
+
+@media (max-width: 1024px) {
+  .cta-container {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 40px;
+  }
+  
+  .cta-heading {
+    font-size: 2rem;
+  }
+  
+  .cta-right {
+    margin-top: 1rem;
+    order: -1;
+  }
 }

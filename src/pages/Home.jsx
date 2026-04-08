@@ -157,10 +157,10 @@ const Home = () => {
                 Ved at sende jeres kernebehov og håndtegnede skitser, skaber systemet et skræddersyet, minimalistisk fundament.
                 Det giver jer et øjeblikkeligt overblik over, hvordan jeres fremtidige platform kan se ud, inden vi går i maskinrummet og koder hjemmesiden - Få det helt gratis.
               </p>
-              <button className="design-udkast-btn">
+              <Link to="/book-intro" className="design-udkast-btn" style={{ textDecoration: 'none' }}>
                 Designudkast
                 <img src={pil} alt="pil" className="btn-arrow" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>
