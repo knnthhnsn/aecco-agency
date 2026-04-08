@@ -1,4 +1,4 @@
-﻿/* ÃƒÂ¦ccoo - Global Layout & Animations */
+/* ÃƒÂ¦ccoo - Global Layout & Animations */
 @import './styles/theme.css';
 
 :root {
@@ -2839,42 +2839,6 @@ body.eco-low .eco-btn.active {
   line-height: 1.6;
 }
 
-.about-cta {
-  text-align: center;
-  margin-top: 10rem;
-  padding: 6rem;
-  background: var(--accent-lumen-green);
-  border-radius: 40px;
-  color: #161616;
-}
-
-.about-cta h2 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 2rem;
-  color: #161616 !important;
-  background: none;
-  -webkit-text-fill-color: #161616;
-}
-
-.about-cta .cta-button-large {
-  display: inline-block;
-  background: #161616;
-  color: var(--accent-lumen-green);
-  padding: 1.2rem 3rem;
-  border-radius: 50px;
-  font-weight: 800;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.4s ease;
-  margin-top: 1rem;
-}
-
-.about-cta .cta-button-large:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
 
 @media (max-width: 768px) {
   .manifesto-quote {
@@ -4420,11 +4384,14 @@ body.eco-low {
 .about-cta {
   margin: 10rem 0;
   padding: 0 5%;
+  background: transparent !important;
+  position: relative;
+  z-index: 10;
 }
 
 .cta-container {
-  background: #808080 !important;
-  border-radius: 60px;
+  background: #252525 !important; /* Mørk grå som i premium design */
+  border-radius: 40px;
   padding: 5rem 6rem;
   display: flex;
   justify-content: space-between;
@@ -4433,6 +4400,9 @@ body.eco-low {
   max-width: 1200px;
   margin: 0 auto;
   text-align: left !important;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
 .cta-left {
@@ -4440,43 +4410,25 @@ body.eco-low {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  position: relative;
+  z-index: 2;
 }
 
 .cta-heading {
-  font-size: 3.5rem;
+  font-size: clamp(2.2rem, 5vw, 3.5rem) !important;
   font-weight: 850;
-  color: white !important;
+  color: #FFFFFF !important;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   max-width: 800px;
+  background: none !important;
+  -webkit-text-fill-color: #FFFFFF !important;
 }
 
 .cta-subtext {
   font-size: 1.25rem;
-  color: white !important;
-  opacity: 0.9;
+  color: rgba(255, 255, 255, 0.8) !important;
   margin-bottom: 3rem;
-}
-
-.cta-link-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 1rem;
-  background: var(--accent-lumen-green, #b5e61d) !important;
-  color: #000 !important;
-  padding: 1.2rem 2.5rem;
-  border-radius: 15px;
-  font-weight: 800;
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: all 0.3s ease;
-  border: 2px solid white;
-  box-shadow: 4px 4px 0px rgba(255, 255, 255, 1);
-}
-
-.cta-link-btn:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 8px 8px 0px rgba(255, 255, 255, 1);
 }
 
 .cta-right {
@@ -4493,18 +4445,54 @@ body.eco-low {
   .cta-container {
     flex-direction: column;
     padding: 4rem 2rem;
-    text-align: left !important;
+    text-align: center !important;
     border-radius: 40px;
     gap: 3rem;
   }
   
+  .cta-left {
+    align-items: center;
+    text-align: center;
+  }
+
   .cta-heading {
     font-size: 2.2rem;
+    text-align: center;
   }
   
   .cta-right {
-    align-self: flex-start;
-    width: 100px;
-    height: 100px;
+    align-self: center;
+    width: 120px;
+    height: 120px;
   }
+}
+
+/* Sustainability Page - Fix for lyn icon and headers */
+.card-top-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.card-main-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem) !important;
+  font-weight: 850;
+  line-height: 1.1;
+  color: #FFFFFF !important;
+  margin: 0;
+  text-align: left;
+}
+
+.lyn-icon-container {
+  flex-shrink: 0;
+  margin-left: 1rem;
+}
+
+.lyn-icon {
+  width: 45px;
+  height: auto;
+  display: block;
 }

@@ -15,9 +15,11 @@ const Sustainability = () => {
     <div className="container page-padding sustainability-page" style={{ paddingTop: '2rem' }}>
       <div className="sustainability-layout">
         
-        {/* Grønnere Webløsninger Title */}
-        <section className="sust-hero-title">
-          <h1 className="grønnere-title">GRØNNERE WEBLØSNINGER</h1>
+        {/* Hero Title - Hvad er digital bæredygtighed? */}
+        <section className="sust-hero-title" style={{ marginBottom: '4rem' }}>
+          <h1 className="page-title" style={{ fontSize: 'clamp(3rem, 8vw, 6rem)', justifyContent: 'center' }}>
+            Hvad er <span className="highlight-box">digital</span> bæredygtighed?
+          </h1>
         </section>
 
         {/* Top Grid Section */}
@@ -68,6 +70,13 @@ const Sustainability = () => {
             </motion.div>
           </div>
         </div>
+
+        {/* Grønnere Webløsninger - Section Title before Options */}
+        <section className="sust-solutions-header" style={{ marginTop: '8rem', marginBottom: '4rem', textAlign: 'center' }}>
+          <h2 style={{ fontSize: 'clamp(2.5rem, 6vw, 4.5rem)', fontWeight: '900', color: '#fff', textTransform: 'uppercase', letterSpacing: '-2px' }}>
+            GRØNNERE <span style={{ color: 'var(--accent-lumen-green)' }}>WEBLØSNINGER</span>
+          </h2>
+        </section>
 
         {/* Stacking Options Section */}
         <div className="sust-options-container">
