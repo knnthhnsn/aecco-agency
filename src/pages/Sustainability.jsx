@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Logo from '../assets/Logo.svg';
+import lyn from '../assets/lyn.svg';
 
 const Sustainability = () => {
   const avatars = [
@@ -14,62 +15,56 @@ const Sustainability = () => {
     <div className="container page-padding sustainability-page" style={{ paddingTop: '2rem' }}>
       <div className="sustainability-layout">
         
-        <header className="clients-header" style={{ marginBottom: '8rem' }}>
-          <h1 className="page-title" style={{ justifyContent: 'flex-start' }}>
-            Hvad er digital <span className="highlight-box">bæredygtighed?</span>
-          </h1>
-        </header>
+        {/* Grønnere Webløsninger Title */}
+        <section className="sust-hero-title">
+          <h1 className="grønnere-title">GRØNNERE WEBLØSNINGER</h1>
+        </section>
 
         {/* Top Grid Section */}
         <div className="sustainability-top-grid">
-          {/* Large Left Card */}
+          {/* Large Left Card - CO2 Optimized */}
           <motion.div 
-            className="sust-card sust-card-large-left"
+            className="sust-card sust-card-large-left co2-optimized-card"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <div className="card-header">
-              <h2>Metode</h2>
-              <div className="sust-icon-badge">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
-                    <line x1="7" y1="7" x2="7.01" y2="7"></line>
-                </svg>
+            <div className="card-top-header">
+              <h2 className="card-main-title">CO2 optimeret <br /> webdesign</h2>
+              <div className="lyn-icon-container">
+                <img src={lyn} alt="Lyn" className="lyn-icon" />
               </div>
             </div>
-            <p className="card-text">Vi designer løsninger, der eliminerer digital støj og fokuserer på ren brugsværdi. Vores tilgang kombinerer æstetik med ekstrem teknisk optimering for at drive jeres brand mod en grønnere fremtid.</p>
-            
-            <div className="avatar-stack-wrapper">
-              <div className="avatar-stack">
-                {avatars.map((url, i) => (
-                  <img key={i} src={url} alt="Holdet" className="stack-avatar" style={{ zIndex: 10 - i }} />
-                ))}
-              </div>
-            </div>
+            <p className="card-description-text">
+              Internettet står idag for 3-4 % af verdens samlede CO2-udledning – hvilket faktisk overstiger hele flybranchen. Hver gang en tung hjemmeside loades, trækker det massiv strøm fra fysiske datacentre og netværkskabler.
+            </p>
           </motion.div>
 
-          {/* Right Column Column */}
+          {/* Right Column Stacked */}
           <div className="sust-right-col">
             <motion.div 
-              className="sust-card sust-card-small"
+              className="sust-card sust-card-side digital-pollution-card"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2>Ydelser</h2>
-              <p>Vi udvikler alt fra lynhurtige landing-pages til komplekse webapplikationer, der altid leveres med minimalt CO2-aftryk uden at gå på kompromis med oplevelsen.</p>
+              <h2 className="side-card-title">Digitalt foruning = fysisk</h2>
+              <p className="side-card-text">
+                Internettet er ikke en usynlig "sky", men en enorm fysisk maskine af servere. Selvom din skærm ikke har et udstødningsrør, koster hver eneste byte data ægte strøm og udleder reel CO2.
+              </p>
             </motion.div>
 
             <motion.div 
-              className="sust-card sust-card-small"
+              className="sust-card sust-card-side optimize-card"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <h2>Optimering</h2>
-              <p>Har I allerede et eksisterende site? Vi foretager dybdegående analyser af jeres performance og energiforbrug, og implementerer fix, der gør jer mærkbart grønnere.</p>
+              <h2 className="side-card-title">Optimize</h2>
+              <p className="side-card-text">
+                Enjoy exclusive networking sessions, roundtables, and social events to foster collaboration and spark new partnerships.
+              </p>
             </motion.div>
           </div>
         </div>

@@ -302,10 +302,10 @@ const About = () => {
             </div>
             <div className="cta-right">
               <div className="cta-chat-icon">
-                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 20C10 14.4772 14.4772 10 20 10H100C105.523 10 110 14.4772 110 20V80C110 85.5228 105.523 90 100 90H80L55 110L55 90H20C14.4772 90 10 85.5228 10 80V20Z" stroke="currentColor" strokeWidth="8" strokeLinejoin="round"/>
-                  <path d="M30 35H90" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
-                  <path d="M30 55H70" stroke="currentColor" strokeWidth="8" strokeLinecap="round"/>
+                <svg viewBox="0 0 120 120" role="img" aria-label="Chat Icon" className="cta-chat-icon">
+                  <path d="M10 20C10 14.4772 14.4772 10 20 10H100C105.523 10 110 14.4772 110 20V80C110 85.5228 105.523 90 100 90H80L55 110L55 90H20C14.4772 90 10 85.5228 10 80V20Z" fill="currentColor"/>
+                  <path d="M30 35H90" stroke="#000" strokeWidth="6" strokeLinecap="round"/>
+                  <path d="M30 55H70" stroke="#000" strokeWidth="6" strokeLinecap="round"/>
                 </svg>
               </div>
             </div>

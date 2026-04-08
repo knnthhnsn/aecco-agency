@@ -1,4 +1,4 @@
-/* æccoo - Global Layout & Animations */
+﻿/* ÃƒÂ¦ccoo - Global Layout & Animations */
 @import './styles/theme.css';
 
 :root {
@@ -110,7 +110,7 @@ body.hide-nav .eco-toggle-bar {
   gap: 4rem;
   position: relative;
   z-index: 1;
-  /* Opretter en ny local stacking context, så ::before ikke ryger af helvedes til baggrunden */
+  /* Opretter en ny local stacking context, sÃƒÂ¥ ::before ikke ryger af helvedes til baggrunden */
 }
 
 .hero-heading-container {
@@ -430,7 +430,7 @@ body.hide-nav .eco-toggle-bar {
   position: relative;
   z-index: 1;
   overflow: visible !important;
-  /* CRITICAL: sticky kræver dette */
+  /* CRITICAL: sticky krÃƒÂ¦ver dette */
 }
 
 .process-section>.container {
@@ -510,7 +510,7 @@ body.hide-nav .eco-toggle-bar {
   gap: 65vh;
   /* Standardiseret afstand mellem kortene */
   padding-bottom: 65vh;
-  /* Giver plads til at det allersidste kort låser sig fint før man forlader sektionen */
+  /* Giver plads til at det allersidste kort lÃƒÂ¥ser sig fint fÃƒÂ¸r man forlader sektionen */
 }
 
 .process-card {
@@ -523,7 +523,7 @@ body.hide-nav .eco-toggle-bar {
   margin-bottom: 0;
 }
 
-/* Hvert kort låser sig lidt forskudt, så stablen er synlig */
+/* Hvert kort lÃƒÂ¥ser sig lidt forskudt, sÃƒÂ¥ stablen er synlig */
 .process-card:nth-child(1) {
   top: 15vh;
   z-index: 1;
@@ -547,25 +547,25 @@ body.hide-nav .eco-toggle-bar {
 .card-watermark {
   position: absolute;
   height: 44px;
-  /* Skruet ordentligt op for størrelsen */
+  /* Skruet ordentligt op for stÃƒÂ¸rrelsen */
   width: auto;
   opacity: 1;
-  /* Fjernet sløring (vandmærke-effekt) så den står knivskarpt! */
+  /* Fjernet slÃƒÂ¸ring (vandmÃƒÂ¦rke-effekt) sÃƒÂ¥ den stÃƒÂ¥r knivskarpt! */
   pointer-events: none;
   z-index: 10;
 }
 
-/* Finjusteret så den sidder eksakt på samme linje som "01"-tallet og modsat margin */
+/* Finjusteret sÃƒÂ¥ den sidder eksakt pÃƒÂ¥ samme linje som "01"-tallet og modsat margin */
 .process-card .card-watermark {
   top: 3.3rem;
-  /* Trukket en anelse op så den kompenserer for sin egen tungere højde! */
+  /* Trukket en anelse op sÃƒÂ¥ den kompenserer for sin egen tungere hÃƒÂ¸jde! */
   right: 3rem;
 }
 
-/* Finjusteret til de mindre Service-kort så logoet står overfor fluebens-ikonet */
+/* Finjusteret til de mindre Service-kort sÃƒÂ¥ logoet stÃƒÂ¥r overfor fluebens-ikonet */
 .service-card .card-watermark {
   top: 2.8rem;
-  /* Skarpt modsat det grønne venstreikon */
+  /* Skarpt modsat det grÃƒÂ¸nne venstreikon */
   right: 2rem;
 }
 
@@ -756,7 +756,7 @@ body.hide-nav .eco-toggle-bar {
   height: 32px;
   border-radius: 50%;
   border: none;
-  /* Fjernede rammerne efter ønske */
+  /* Fjernede rammerne efter ÃƒÂ¸nske */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   flex-shrink: 0;
 }
@@ -801,7 +801,7 @@ body.hide-nav .eco-toggle-bar {
 .gauge-percentage {
   display: block;
   font-size: 2.6rem;
-  /* Markant mindre for at være 100% sikker på clearance */
+  /* Markant mindre for at vÃƒÂ¦re 100% sikker pÃƒÂ¥ clearance */
   font-weight: 950;
   color: var(--accent-lumen-green);
   line-height: 0.8;
@@ -1634,7 +1634,7 @@ body.hide-nav .eco-toggle-bar {
 /* Organic Utilities */
 .organic-shape {
   border-radius: var(--radius-organic) !important;
-  /* Animation fjernet herfra for at gøre sitet mere roligt */
+  /* Animation fjernet herfra for at gÃƒÂ¸re sitet mere roligt */
 }
 
 .stats-box-animated {
@@ -2042,7 +2042,7 @@ body.eco-low .eco-btn.active {
   border-radius: 50px;
 }
 
-/* Gradient-glød fjernet for et endnu mere "rent" og brutalt look */
+/* Gradient-glÃƒÂ¸d fjernet for et endnu mere "rent" og brutalt look */
 
 .pricing-card:hover {
   transform: translateY(-10px);
@@ -2112,7 +2112,7 @@ body.eco-low .eco-btn.active {
 }
 
 .feature-list li::before {
-  content: "→";
+  content: "Ã¢â€ â€™";
   color: var(--accent-lumen-green);
   font-weight: bold;
 }
@@ -2179,7 +2179,7 @@ body.eco-low .eco-btn.active {
 
 .bg-vector {
   width: 100%;
-  /* 1063 / 1440 * 100 = 73.819vw - dette bevarer aspect ratio præcis ud fra skærmbredde */
+  /* 1063 / 1440 * 100 = 73.819vw - dette bevarer aspect ratio prÃƒÂ¦cis ud fra skÃƒÂ¦rmbredde */
   height: 73.82vw;
   min-height: 73.82vw;
   flex-shrink: 0;
@@ -2192,7 +2192,7 @@ body.eco-low .eco-btn.active {
   opacity: 0.9;
 }
 
-/* Spejl HVER ANDEN blok vertikalt. Dette gør at bunden af blok 1 passer millimeter-præcist med bunden af blok 2 (som nu vender opad) */
+/* Spejl HVER ANDEN blok vertikalt. Dette gÃƒÂ¸r at bunden af blok 1 passer millimeter-prÃƒÂ¦cist med bunden af blok 2 (som nu vender opad) */
 .bg-vector:nth-child(even) {
   transform: scaleY(-1);
 }
@@ -2218,7 +2218,7 @@ body.eco-low .eco-btn.active {
   z-index: -1;
   pointer-events: none;
   opacity: 0.4;
-  /* Gør den mindre dominerende bag teksten */
+  /* GÃƒÂ¸r den mindre dominerende bag teksten */
 }
 
 .hero {
@@ -2380,7 +2380,7 @@ body.eco-low .eco-btn.active {
 /* -------------------------------- */
 .unified-footer {
   background-color: transparent;
-  /* Helt gennemsigtig som ønsket */
+  /* Helt gennemsigtig som ÃƒÂ¸nsket */
   padding: 8rem 0 10rem;
   /* Ekstra luft for at give den store tekst plads */
   color: var(--accent-lumen-green);
@@ -2389,7 +2389,7 @@ body.eco-low .eco-btn.active {
 
 .footer-mega-text {
   font-size: 20vw;
-  /* Øget størrelse for endnu mere pondus */
+  /* ÃƒËœget stÃƒÂ¸rrelse for endnu mere pondus */
   font-weight: 950;
   color: var(--accent-lumen-green);
   opacity: 1;
@@ -2593,7 +2593,7 @@ body.eco-low .eco-btn.active {
 
 .faq-item.open .faq-toggle {
   transform: rotate(45deg);
-  /* Gør + til et x eller bare animer det */
+  /* GÃƒÂ¸r + til et x eller bare animer det */
 }
 
 .faq-answer {
@@ -2647,7 +2647,7 @@ body.eco-low .eco-btn.active {
 /* -------------------------------- */
 .about-horizontal-scroll-section {
   height: 550vh;
-  /* Mere bane så titlen kan ryge ud og ALLE kort kan komme ind */
+  /* Mere bane sÃƒÂ¥ titlen kan ryge ud og ALLE kort kan komme ind */
   position: relative;
   margin-top: 4rem;
 }
@@ -2707,7 +2707,7 @@ body.eco-low .eco-btn.active {
 .team-img-container {
   width: 100%;
   aspect-ratio: 1/1.3;
-  /* Højere billeder for bedre portræt-visning */
+  /* HÃƒÂ¸jere billeder for bedre portrÃƒÂ¦t-visning */
   overflow: hidden;
   position: relative;
 }
@@ -3468,7 +3468,7 @@ body.eco-low .eco-btn.active {
   min-height: 480px;
   background: #868686;
   border-radius: 60px;
-  /* Reduceret runding som ønsket */
+  /* Reduceret runding som ÃƒÂ¸nsket */
   overflow: hidden;
   margin-bottom: 0.5rem;
   transition: transform 0.4s ease;
@@ -3477,7 +3477,7 @@ body.eco-low .eco-btn.active {
 
 .card-visual-side {
   flex: 1.3;
-  /* Gjort bredere som ønsket */
+  /* Gjort bredere som ÃƒÂ¸nsket */
   background: #343434;
   position: relative;
   display: flex;
@@ -3525,7 +3525,7 @@ body.eco-low .eco-btn.active {
 }
 
 .client-card-v2 .logo-echo-wrapper::after {
-  display: none; /* Fjernet for kun at pulsere én gang */
+  display: none; /* Fjernet for kun at pulsere ÃƒÂ©n gang */
 }
 
 @keyframes logo-ghost-echo {
@@ -3748,7 +3748,7 @@ body.eco-low .eco-btn.active {
   writing-mode: vertical-lr;
   /* Vertikal som i mockup */
   transform: rotate(180deg);
-  /* Korrekt læseretning nedefra og op */
+  /* Korrekt lÃƒÂ¦seretning nedefra og op */
 }
 
 .technical-side-text span {
@@ -3924,7 +3924,7 @@ body.eco-low .eco-btn.active {
 .v3-avatar-box img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Sikrer at ingen dele af logoet bliver skåret af */
+  object-fit: contain; /* Sikrer at ingen dele af logoet bliver skÃƒÂ¥ret af */
 }
 
 .v3-avatar-box.v3-scale-up {
@@ -4143,7 +4143,7 @@ body.eco-low .eco-btn.active {
     flex-direction: column !important;
     height: auto !important;
     border-radius: 30px !important;
-    background: transparent !important; /* Forhindrer den grå farve i at stikke ud ved hjørnerne */
+    background: transparent !important; /* Forhindrer den grÃƒÂ¥ farve i at stikke ud ved hjÃƒÂ¸rnerne */
   }
   
   .client-card-v2 .card-visual-side,
@@ -4152,13 +4152,13 @@ body.eco-low .eco-btn.active {
     min-height: 300px;
     width: 100%;
     border-radius: 30px 30px 0 0 !important;
-    /* På mobil behøver vi ikke fiksere tykkelsen, men blot sikre at det runder med forældren */
+    /* PÃƒÂ¥ mobil behÃƒÂ¸ver vi ikke fiksere tykkelsen, men blot sikre at det runder med forÃƒÂ¦ldren */
   }
 
   .card-content-side {
     padding: 3rem 2rem !important;
     border-radius: 0 0 30px 30px !important;
-    background: #868686 !important; /* Genskab farven her, så den ikke misser */
+    background: #868686 !important; /* Genskab farven her, sÃƒÂ¥ den ikke misser */
   }
 }
 
@@ -4218,7 +4218,7 @@ body.eco-medium .eco-toggle-bar {
   background: rgba(30, 30, 30, 0.98) !important;
 }
 
-/* LAV: Minimal strøm og ren HTML/CSS rendering uden fluff */
+/* LAV: Minimal strÃƒÂ¸m og ren HTML/CSS rendering uden fluff */
 body.eco-low .bg-vector,
 body.eco-low .global-vector-wrapper,
 body.eco-low .project-animation-wrapper,
@@ -4249,7 +4249,7 @@ body.eco-low .eco-toggle-bar {
   border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
-/* OLED-besparelse for Lav tilstand: Dæmp store lys-kilder (billeder) til 80% opacity */
+/* OLED-besparelse for Lav tilstand: DÃƒÂ¦mp store lys-kilder (billeder) til 80% opacity */
 body.eco-low img,
 body.eco-low video {
   opacity: 0.8 !important;
@@ -4289,7 +4289,7 @@ body.eco-low {
 
 .sust-slider-card {
   flex: 0 0 33.333%;
-  padding: 0 4rem; /* Øget padding for at sikre afstand til pilene */
+  padding: 0 4rem; /* ÃƒËœget padding for at sikre afstand til pilene */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -4423,80 +4423,88 @@ body.eco-low {
 }
 
 .cta-container {
-  background: #808080;
+  background: #808080 !important;
   border-radius: 60px;
-  padding: 4rem 6rem;
+  padding: 5rem 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   max-width: 1200px;
   margin: 0 auto;
+  text-align: left !important;
 }
 
 .cta-left {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .cta-heading {
-  font-size: 3.2rem;
-  font-weight: 800;
-  color: white;
+  font-size: 3.5rem;
+  font-weight: 850;
+  color: white !important;
   margin-bottom: 1.5rem;
   line-height: 1.1;
+  max-width: 800px;
 }
 
 .cta-subtext {
-  font-size: 1.1rem;
-  color: white;
+  font-size: 1.25rem;
+  color: white !important;
   opacity: 0.9;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .cta-link-btn {
   display: inline-flex;
   align-items: center;
   gap: 1rem;
-  background: var(--accent-lumen-green);
-  color: var(--primary-bg);
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  font-weight: 700;
+  background: var(--accent-lumen-green, #b5e61d) !important;
+  color: #000 !important;
+  padding: 1.2rem 2.5rem;
+  border-radius: 15px;
+  font-weight: 800;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
-  box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+  border: 2px solid white;
+  box-shadow: 4px 4px 0px rgba(255, 255, 255, 1);
 }
 
 .cta-link-btn:hover {
-  transform: translateY(-3px);
-  filter: brightness(1.1);
+  transform: translate(-4px, -4px);
+  box-shadow: 8px 8px 0px rgba(255, 255, 255, 1);
 }
 
 .cta-right {
-  flex: 0 0 150px;
+  flex: 0 0 180px;
 }
 
 .cta-chat-icon {
-  width: 150px;
-  height: 150px;
-  color: var(--accent-lumen-green);
+  width: 180px;
+  height: 180px;
+  color: var(--accent-lumen-green, #b5e61d);
 }
 
 @media (max-width: 1024px) {
   .cta-container {
     flex-direction: column;
-    padding: 3rem 2rem;
-    text-align: center;
+    padding: 4rem 2rem;
+    text-align: left !important;
     border-radius: 40px;
+    gap: 3rem;
   }
   
   .cta-heading {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   
   .cta-right {
-    margin-top: 1rem;
-    order: -1;
+    align-self: flex-start;
+    width: 100px;
+    height: 100px;
   }
 }
