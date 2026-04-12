@@ -4300,7 +4300,7 @@ body.eco-low .eco-toggle-bar {
 body.eco-low .sust-option-card,
 body.eco-low .bubble-chart-container,
 body.eco-low .gauge-chart-container {
-  background: transparent !important;
+  background: #000000 !important;
   border: none !important;
   backdrop-filter: none !important;
   box-shadow: none !important;
