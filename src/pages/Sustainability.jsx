@@ -398,10 +398,10 @@ const Sustainability = () => {
                     </svg>
                   </div>
                   <div style={{ flex: 1 }}>
-                    <span style={{ fontSize: '0.55rem', textTransform: 'uppercase', opacity: 0.4, fontWeight: 700, display: 'block', letterSpacing: '1px', color: '#FFFFFF' }}>Rasterbillede</span>
-                    <span style={{ fontSize: '1rem', color: '#FFFFFF', fontWeight: 800 }}>Hoj opl. .JPG</span>
+                    <span style={{ fontSize: '0.55rem', textTransform: 'uppercase', opacity: 0.4, fontWeight: 700, display: 'block', letterSpacing: '1px', color: '#FFFCDF' }}>Rasterbillede</span>
+                    <span style={{ fontSize: '1rem', color: '#FFFCDF', fontWeight: 800 }}>Høj opløsning .JPG</span>
                   </div>
-                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#FFFFFF', whiteSpace: 'nowrap' }}>4.2 MB</span>
+                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#FFFCDF', whiteSpace: 'nowrap' }}>4.2 MB</span>
                 </div>
 
                 {/* Reduction arrow */}
