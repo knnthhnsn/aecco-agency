@@ -8,8 +8,8 @@
   --accent-lumen-green-glow: rgba(154, 209, 40, 0.4);
   
   /* Glass Variables */
-  --glass-bg: #FFFBD8;
-  --glass-border: #FFFBD8;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
   --glass-blur: blur(12px) saturate(180%);
   
   /* Sizing / Radii */
@@ -40,10 +40,10 @@ a, a:visited, a:hover, a:active {
 
 /* Glassmorphism Classes */
 .glass-panel {
-  background: #FFFBD8;
+  background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(20px) saturate(160%);
   -webkit-backdrop-filter: blur(20px) saturate(160%);
-  border: 1px solid #FFFBD8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
