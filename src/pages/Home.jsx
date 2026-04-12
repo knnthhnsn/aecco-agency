@@ -197,9 +197,11 @@ const Home = () => {
                 <div className="author-info">
                   <h4 className="author-name">Teemo Skov Hansen</h4>
                   <p className="author-role">Innovator @ æcco</p>
-                  <div className="quote-cta">
-                    <span>Oplev vores rejse</span>
-                    <img src={pil} alt="pil" className="cta-arrow-svg" />
+                  <div className="teemo-cta-wrapper">
+                    <div className="cta-button">
+                      <span>mere om os</span>
+                      <img src={pil} alt="pil" className="btn-arrow" />
+                    </div>
                   </div>
                 </div>
                 <img src={logo} alt="æcco" className="quote-logo" />

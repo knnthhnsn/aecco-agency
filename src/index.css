@@ -3367,28 +3367,32 @@ body.eco-low .eco-btn.active {
   font-weight: 600;
 }
 
-.quote-cta {
+.teemo-cta-wrapper {
   margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: var(--accent-lumen-green);
-  font-weight: 800;
-  font-size: 0.9rem;
+}
+
+.teemo-cta-wrapper .cta-button {
+  padding: 0.7rem 1.6rem;
+  font-size: 0.85rem;
+  box-shadow: 3px 3px 0px #FFFCDF;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: 850;
+  letter-spacing: 0.5px;
+  gap: 1rem;
 }
 
-.cta-arrow-svg {
-  height: 12px;
-  width: auto;
-  transition: transform 0.3s ease;
-  filter: brightness(0) saturate(100%) invert(86%) sepia(21%) architecture(26%) hue-rotate(24deg) brightness(108%) contrast(101%);
-  /* Dette filter matcher din cremede farve #FFFCDF hvis muligt, ellers bruger vi bare SVG'ens egen farve */
+.teemo-cta-wrapper .btn-arrow {
+  height: 10px;
+  filter: brightness(0);
 }
 
-.teemo-quote-card:hover .cta-arrow-svg {
-  transform: translateX(8px);
+.teemo-quote-card:hover .teemo-cta-wrapper .cta-button {
+  transform: translate(2px, 2px);
+  box-shadow: 0px 0px 0px #FFFCDF;
+}
+
+.teemo-quote-card:hover .btn-arrow {
+  transform: translateX(4px);
 }
 
 .quote-logo {
