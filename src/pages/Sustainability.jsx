@@ -388,7 +388,7 @@ const Sustainability = () => {
 
               <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '1rem', marginTop: '1rem' }}>
                 {/* Legacy JPG - Heavy */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: '#FFFFFF', padding: '1rem 1.2rem', borderRadius: '20px', border: '1px solid #FFFFFF' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(255, 255, 255, 0.03)', padding: '1rem 1.2rem', borderRadius: '20px', border: '1px solid rgba(255, 255, 255, 0.08)', backdropFilter: 'blur(10px)' }}>
                   <div style={{ width: '56px', height: '56px', background: '#1a1a1a', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     {/* Raster image icon - mountains & sun */}
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -398,10 +398,10 @@ const Sustainability = () => {
                     </svg>
                   </div>
                   <div style={{ flex: 1 }}>
-                    <span style={{ fontSize: '0.55rem', textTransform: 'uppercase', opacity: 0.4, fontWeight: 700, display: 'block', letterSpacing: '1px' }}>Rasterbillede</span>
-                    <span style={{ fontSize: '1rem', color: '#FFFCDF', fontWeight: 800 }}>Høj opl. .JPG</span>
+                    <span style={{ fontSize: '0.55rem', textTransform: 'uppercase', opacity: 0.4, fontWeight: 700, display: 'block', letterSpacing: '1px', color: '#FFFFFF' }}>Rasterbillede</span>
+                    <span style={{ fontSize: '1rem', color: '#FFFFFF', fontWeight: 800 }}>Hoj opl. .JPG</span>
                   </div>
-                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#FFFCDF', whiteSpace: 'nowrap' }}>4.2 MB</span>
+                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#FFFFFF', whiteSpace: 'nowrap' }}>4.2 MB</span>
                 </div>
 
                 {/* Reduction arrow */}
