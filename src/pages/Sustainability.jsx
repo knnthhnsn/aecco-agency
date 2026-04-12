@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Logo from '../assets/Logo.svg';
 import lyn from '../assets/lyn.svg';
+import { Helmet } from 'react-helmet-async';
 
 const Sustainability = () => {
   const avatars = [
@@ -13,6 +14,13 @@ const Sustainability = () => {
 
   return (
     <div className="container page-padding sustainability-page" style={{ paddingTop: '2rem' }}>
+      <Helmet>
+        <title>Hvad er Digital Bæredygtighed? | æcco's Grønne Vision</title>
+        <meta name="description" content="Lær hvordan webdesign påvirker klimaet. æcco optimerer infrastruktur, hosting og assets for at reducere CO2-udledning fra internettet." />
+        <meta property="og:title" content="Digital Bæredygtighed: Fra Teori til Handling" />
+        <meta property="og:description" content="Internettet står for 4% af verdens CO2. Lær hvordan vi gør din hjemmeside grønnere." />
+        <link rel="canonical" href="https://aecco-agency.web.app/sustainability" />
+      </Helmet>
       <div className="sustainability-layout">
         
         {/* Hero Title - Hvad er digital bæredygtighed? */}

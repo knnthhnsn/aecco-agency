@@ -1,8 +1,14 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
   return (
     <div className="container page-padding">
+      <Helmet>
+        <title>Kontakt | Start Dialogen om dit Grønne Website | æcco</title>
+        <meta name="description" content="Klar til at gøre dit website mere bæredygtigt? Kontakt æcco for en uforpligtende samtale om lynhurtig performance og CO2-optimering." />
+        <link rel="canonical" href="https://aecco-agency.web.app/contact" />
+      </Helmet>
       <div className="contact-card" style={{ maxWidth: '650px', margin: '2rem auto', position: 'relative' }}>
         <div className="bio-aura" style={{ width: '300px', height: '300px', top: '-100px', right: '-100px', opacity: 0.12 }}></div>
         <h1 className="text-gradient" style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>Lad os tale sammen</h1>

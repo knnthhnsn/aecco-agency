@@ -5,7 +5,14 @@ import { SustainableIcon, PerformanceIcon, IdentityIcon } from '../components/Ic
 import pil from '../assets/pil.svg';
 import logo from '../assets/Logo.svg';
 import teemo from '../assets/teemo.avif';
+import hurtigeIcon from '../assets/tid.svg';
+import visuelIcon from '../assets/visuel-komprimering.svg';
+import friktionIcon from '../assets/friktionsloes-navigation.svg';
+import oekonomiIcon from '../assets/oekonomi-og-groen-drift.svg';
+import aeccoVideo from '../assets/aecco.mp4';
 import { Link } from 'react-router-dom';
+import udkast from '../assets/udkast.avif';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   const [activeStep, setActiveStep] = useState(0);
@@ -34,18 +41,35 @@ const Home = () => {
 
   return (
     <main className="organic-landing">
+      <Helmet>
+        <title>æcco | Bæredygtigt Webdesign & Digital Resonans</title>
+        <meta name="description" content="æcco er et bæredygtigt webbureau, der forener æstetik med CO2-optimeret performance. Vi hjælper startups med at skabe digitale løsninger med minimalt miljøaftryk." />
+        <meta property="og:title" content="æcco | Bæredygtigt Webdesign for Startups" />
+        <meta property="og:description" content="Skab mærkbar forskel med CO2-optimeret webdesign og lynhurtig performance." />
+        <meta property="og:type" content="website" />
+        <link rel="canonical" href="https://aecco-agency.web.app/" />
+      </Helmet>
       <Hero />
 
       {/* Projects Section */}
       <section className="projects-section" id="projects">
         <div className="container">
           <div className="projects-layout">
-            <div className="project-video-placeholder">
-              <div className="play-button-icon">
-                <svg width="30" height="30" viewBox="0 0 24 24" fill="#161616">
-                  <path d="M8 5v14l11-7z"></path>
-                </svg>
-              </div>
+            <div className="project-video-container">
+              <video 
+                src={aeccoVideo} 
+                controls
+                playsInline 
+                className="project-video"
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  borderRadius: '24px',
+                  display: 'block',
+                  cursor: 'pointer'
+                }}
+              />
             </div>
 
             <div className="projects-info">
@@ -94,46 +118,45 @@ const Home = () => {
         <div className="container">
           <div className="process-layout">
             <div className="process-info sticky">
-              <span className="process-label" style={{ color: 'var(--accent-lumen-green)', fontWeight: 'bold', fontSize: '0.8rem', letterSpacing: '1px', textTransform: 'uppercase' }}>PROCES</span>
-              <h2 className="text-gradient">Sådan foregår samarbejdet med os...</h2>
-              <p>Vi guider jer trygt gennem hele forløbet, fra den første idé til det færdige, grønne aftryk på nettet.</p>
+              <span className="process-label" style={{ color: 'var(--accent-lumen-green)', fontWeight: 'bold', fontSize: '0.8rem', letterSpacing: '1px', textTransform: 'uppercase' }}>VORES MISSION</span>
+              <h2 className="text-gradient">Sådan hjælper æcco til at nedtænke Co2-udledning</h2>
 
               <div className="process-steps-indicator" style={{ marginTop: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
-                <div className={`step-dot ${activeStep === 1 ? 'active' : ''}`}><span className="dot-label">Indledende samtale</span></div>
-                <div className={`step-dot ${activeStep === 2 ? 'active' : ''}`}><span className="dot-label">Strategi</span></div>
-                <div className={`step-dot ${activeStep === 3 ? 'active' : ''}`}><span className="dot-label">Udvikling</span></div>
-                <div className={`step-dot ${activeStep === 4 ? 'active' : ''}`}><span className="dot-label">Lancering</span></div>
+                <div className={`step-dot ${activeStep === 1 ? 'active' : ''}`}><span className="dot-label">Hurtige hjemmesider</span></div>
+                <div className={`step-dot ${activeStep === 2 ? 'active' : ''}`}><span className="dot-label">Visuel komprimering</span></div>
+                <div className={`step-dot ${activeStep === 3 ? 'active' : ''}`}><span className="dot-label">Friktionsløs navigation</span></div>
+                <div className={`step-dot ${activeStep === 4 ? 'active' : ''}`}><span className="dot-label">Økonomi og grøn drift</span></div>
               </div>
 
-              <Link to="/start-project" className="buy-template-btn" style={{ display: 'inline-flex', alignItems: 'center', gap: '1.5rem', textDecoration: 'none', marginTop: '1.8rem' }}>
-                Se Pakkeløsninger
+              <Link to="/sustainability" className="buy-template-btn" style={{ display: 'inline-flex', alignItems: 'center', gap: '1.5rem', textDecoration: 'none', marginTop: '1.8rem' }}>
+                Digital forurening
                 <img src={pil} alt="pil" className="btn-arrow" />
               </Link>
             </div>
             <div className="process-steps">
               <div className="process-card" data-step="1">
-                <img src={logo} alt="æcco" className="card-watermark" />
+                <img src={hurtigeIcon} alt="Hurtige hjemmesider" style={{ position: 'absolute', top: '1.2rem', right: '1.2rem', width: '50px' }} />
                 <div className="step-number">1</div>
-                <h3>Book et intromøde</h3>
-                <p>Start processen ved at booke et gratis intromøde. Her taler vi om jeres visioner og hvordan vi kan hjælpe.</p>
+                <h3>Hurtige hjemmesider</h3>
+                <p>Vi skrotter tunge plugins og koder jeres fundament fra bunden. Ren, statisk arkitektur betyder færre server-anmodninger.</p>
               </div>
               <div className="process-card" data-step="2">
-                <img src={logo} alt="æcco" className="card-watermark" />
+                <img src={visuelIcon} alt="Visuel komprimering" style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', width: '36px' }} />
                 <div className="step-number">2</div>
-                <h3>Strategi og Design-DNA</h3>
-                <p>På baggrund af samtalen kortlægger vi kravene og skitserer en bæredygtig vækststrategi for jeres brand.</p>
+                <h3>Visuel komprimering</h3>
+                <p>Kreativt design behøver ikke at være tungt. Vi tænker i smarte, alternative løsninger og koder med moderne letvægtsformater, til besparelser af megabytes.</p>
               </div>
               <div className="process-card" data-step="3">
-                <img src={logo} alt="æcco" className="card-watermark" />
+                <img src={friktionIcon} alt="Friktionsløs navigation" style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', width: '36px' }} />
                 <div className="step-number">3</div>
-                <h3>Onboarding og Udvikling</h3>
-                <p>Når strategien er på plads, starter udviklingen. Vi sørger for en gnidningsfri kommunikation under hele forløbet.</p>
+                <h3>Friktionsløs navigation</h3>
+                <p>Jo hurtigere brugeren finder sit mål, jo bedre konvertering. Vi designer en ren brugerrejse, der eliminerer forvirring og unødige klik.</p>
               </div>
               <div className="process-card" data-step="4">
-                <img src={logo} alt="æcco" className="card-watermark" />
+                <img src={oekonomiIcon} alt="Økonomi og grøn drift" style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', width: '36px' }} />
                 <div className="step-number">4</div>
-                <h3>Implementering og Lancering</h3>
-                <p>Til sidst implementerer vi løsningen og sørger for, at I er klar til at skabe mærkbare resultater på markedet.</p>
+                <h3>Økonomi og grøn drift</h3>
+                <p>Når sitet er live, hoster vi det på top-optimerede, energieffektive servere. Færre data, mindre serveromkostninger.</p>
               </div>
             </div>
           </div>
@@ -145,13 +168,11 @@ const Home = () => {
         <div className="container">
           <div className="content-block-grid">
             <div className="content-visual">
-              <div className="img-placeholder square-ratio">
-                <span className="placeholder-text">CREATE THROUGH CHAOS</span>
-              </div>
+              <img src={udkast} alt="Designudkast eksempler" className="udkast-img" />
             </div>
             <div className="content-text-side">
               <span className="block-label">CONTENT BLOCK</span>
-              <h2 className="block-title">Del din vision og set os på mission</h2>
+              <h2 className="block-title">Del din <span className="highlight-box">vision</span> og set os på <span className="highlight-box">mission</span></h2>
               <p className="block-desc">
                 Få hurtigt tilsendt et visuelt designudkast. Vores AI-designgenerator skærer genvej fra idé til visuelt udkast.
                 Ved at sende jeres kernebehov og håndtegnede skitser, skaber systemet et skræddersyet, minimalistisk fundament.
@@ -169,7 +190,7 @@ const Home = () => {
       {/* New Teemo Quote Section */}
       <section className="teemo-quote-section">
         <div className="container">
-          <div className="teemo-quote-card">
+          <Link to="/about" className="teemo-quote-card" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="quote-left">
               <h2 className="quote-main-text">"Mit designfokus ligger altid i spændingsfeltet mellem en gnidningsfri brugerrejse (UX) og strategisk placerede konverteringselementer. En logisk arkitektur er for mig fundamentet for ethvert salg."</h2>
               <div className="quote-author">
@@ -183,7 +204,7 @@ const Home = () => {
             <div className="quote-right">
               <img src={teemo} alt="Teemo Skov Hansen" className="teemo-profile-img" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }} />
             </div>
-          </div>
+          </Link>
         </div>
       </section>
 

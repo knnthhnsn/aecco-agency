@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import logo from '../assets/Logo.svg';
 import pil from '../assets/pil.svg';
 
@@ -15,10 +15,11 @@ const Navbar = () => {
       
       <div className={`nav-links-wrapper ${isOpen ? 'active' : ''}`}>
         <ul className="nav-links">
-          <li><Link to="/start-project" onClick={() => setIsOpen(false)}>Ydelser</Link></li>
-          <li><Link to="/clients" onClick={() => setIsOpen(false)}>Vores kunder</Link></li>
-          <li><Link to="/sustainability" onClick={() => setIsOpen(false)}>Bæredygtighed</Link></li>
-          <li><Link to="/about" onClick={() => setIsOpen(false)}>Om os</Link></li>
+          <li><NavLink to="/" onClick={() => setIsOpen(false)}>Forside</NavLink></li>
+          <li><NavLink to="/start-project" onClick={() => setIsOpen(false)}>Ydelser</NavLink></li>
+          <li><NavLink to="/clients" onClick={() => setIsOpen(false)}>Vores kunder</NavLink></li>
+          <li><NavLink to="/sustainability" onClick={() => setIsOpen(false)}>Bæredygtighed</NavLink></li>
+          <li><NavLink to="/about" onClick={() => setIsOpen(false)}>Om os</NavLink></li>
         </ul>
       </div>
 

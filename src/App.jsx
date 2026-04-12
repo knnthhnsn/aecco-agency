@@ -7,6 +7,8 @@ import EcoToggle, { EcoProvider } from './components/EcoToggle';
 import Footer from './components/Footer';
 import GlobalBackground from './components/GlobalBackground';
 
+import { HelmetProvider } from 'react-helmet-async';
+
 // Lazy loading af sider for optimal performance og bæredygtighed
 const Home = lazy(() => import('./pages/Home'));
 const Contact = lazy(() => import('./pages/Contact'));
@@ -18,6 +20,7 @@ const Clients = lazy(() => import('./pages/Clients'));
 
 function App() {
   return (
+    <HelmetProvider>
     <EcoProvider>
     <div className="app-container">
       <div className="global-bg"></div>
@@ -42,6 +45,7 @@ function App() {
       <EcoToggle />
     </div>
     </EcoProvider>
+    </HelmetProvider>
   );
 }
 

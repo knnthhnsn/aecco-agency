@@ -1,4 +1,4 @@
-import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
 import logo from '../assets/Logo.svg';
 import pil from '../assets/pil.svg';
@@ -12,7 +12,7 @@ const portfolios = [
   {
     id: 1,
     title: 'Volume village',
-    subtitle: 'volume village',
+    subtitle: "Aarhus' urbane koncertsted. De danner rammen om rå, nærværende musikoplevelser og events med stærkt fokus på fællesskab.",
     footer: 'Optimering pakke',
     link: 'https://volume-village.vercel.app',
     imgType: 'party',
@@ -22,7 +22,7 @@ const portfolios = [
   {
     id: 2,
     title: 'Steeno museum',
-    subtitle: 'SCIENCE MUSEERNE',
+    subtitle: 'En del af Aarhus Universitet. De gør kompleks naturvidenskab, astronomi og medicinhistorie levende, interaktivt.',
     footer: 'Komplet webløsning',
     link: 'https://interstellar-smoky-psi.vercel.app',
     imgType: 'rings',
@@ -32,7 +32,7 @@ const portfolios = [
   {
     id: 3,
     title: 'Bitcoin Basics',
-    subtitle: 'AI Policy Advisor, EU Commission',
+    subtitle: 'Den førende platform for personlig Bitcoin-uddannelse og sikker opbevaring.',
     footer: 'Ny Hjemmeside',
     imgType: 'rings',
     imgText: 'B',
@@ -41,7 +41,7 @@ const portfolios = [
   {
     id: 4,
     title: 'Min Børnehave',
-    subtitle: 'Stanford AI Lab',
+    subtitle: 'De leverer digital efterforskning og overvågning ved at opspore, indsamle og analysere komplekse data fra åbne kilder.',
     footer: 'Optimering pakke',
     link: 'https://minbørnehave.dk',
     imgType: 'rings',
@@ -88,6 +88,12 @@ const testimonials = [
 const Clients = () => {
   return (
     <div className="clients-page page-padding">
+      <Helmet>
+        <title>Vores Kunder | Case Stories & Digitale Løsninger | æcco</title>
+        <meta name="description" content="Se hvordan vi har hjulpet Volume Village, Steno Museet og andre med at optimere deres digitale tilstedeværelse med fokus på performance og bæredygtighed." />
+        <meta property="og:title" content="æcco Cases - Mærkbare resultater for visionære brands" />
+        <link rel="canonical" href="https://aecco-agency.web.app/clients" />
+      </Helmet>
       <div className="container">
 
         <header className="clients-header">

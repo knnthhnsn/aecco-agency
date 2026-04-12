@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import FAQ from '../components/FAQ';
 import pil from '../assets/pil.svg';
+import { Helmet } from 'react-helmet-async';
 
 const StartProject = () => {
   const packages = [
@@ -55,6 +56,11 @@ const StartProject = () => {
 
   return (
     <div className="container page-padding" style={{ paddingBottom: '8rem' }}>
+      <Helmet>
+        <title>Pakker & Priser | Bæredygtige Webbureau Løsninger | æcco</title>
+        <meta name="description" content="Vælg mellem vores optimeringspakker, komplette webløsninger eller skræddersyede projekter. Gennemsigtig prissætning og fokus på digital bæredygtighed." />
+        <link rel="canonical" href="https://aecco-agency.web.app/start-project" />
+      </Helmet>
       <div className="text-center" style={{ position: 'relative', marginTop: '4rem' }}>
         <div className="bio-aura" style={{ left: '50%', transform: 'translateX(-50%)', top: '-100px', opacity: 0.1 }}></div>
         <h1 className="page-title" style={{ justifyContent: 'center' }}>

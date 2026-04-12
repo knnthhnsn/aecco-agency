@@ -6,93 +6,60 @@ import andreas from '../assets/andreas.avif';
 import logo from '../assets/Logo.svg';
 import pil from '../assets/pil.svg';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Helmet } from 'react-helmet-async';
 
-const AboutIcon = ({ type }) => {
-  if (type === 'fast') {
-    return (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-        <path d="M2 12c1-4 2-4 3 0s2 4 3 0 2-4 3 0 2 4 3 0 2-4 3 0 2 4 3 0" />
-      </svg>
-    );
-  }
-  if (type === 'transparent') {
-    return (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-        <circle cx="12" cy="12" r="9" opacity="0.3" />
-        <circle cx="12" cy="12" r="3" />
-      </svg>
-    );
-  }
-  return (
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
-      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-      <circle cx="9" cy="7" r="4" />
-      <path d="M23 21v-2a4 4 0 0 0-3-3.87" opacity="0.4" />
-      <path d="M16 3.13a4 4 0 0 1 0 7.75" opacity="0.4" />
-    </svg>
-  );
-};
+
 
 const About = () => {
   const team = [
     {
       name: 'Teemo',
       tag: 'UX INNOVATOR',
-      title: 'Besat af den perfekte rejse',
-      desc: 'Teemo stopper aldrig før hver pixel tjener et formål. Han hader unødvendig kode mere end han hader lunkent kaffe, og han sikrer at jeres brugere aldrig farer vild i det digitale vildnis.',
+      title: 'Brugeroplevelse & Strategisk UX',
+      desc: 'Teemo sikrer, at hver interaktion har et klart formål. Han designer intuitive brugerrejser, der fjerner unødig digital friktion og leder besøgende sikkert mod deres mål.',
       img: teemo
     },
     {
       name: 'Kenneth',
       tag: 'UDVIKLER',
-      title: 'Kode der sparer strøm',
-      desc: 'Kenneth bygger den tekniske arkitektur. Fokus er på lynhurtig performance og en infrastruktur, der minimerer energiforbruget per besøg.',
+      title: 'Bæredygtig Webarkitektur',
+      desc: 'Kenneth er arkitekten bag vores lynhurtige performance. Han bygger fundamentet fra bunden for at eliminere tunge plugins og sikre markedets laveste CO2-aftryk per sidevisning.',
       img: kenneth
     },
     {
       name: 'Andreas',
       tag: 'DESIGNER',
-      title: 'Visuel Resonans',
-      desc: 'Andreas designer de visuelle koncepter, der får jeres brand til at give genlyd, uden at gå på kompromis med bæredygtighedsprincipperne.',
+      title: 'Visuel Identitet & Resonans',
+      desc: 'Andreas forener moderne æstetik med digital bæredygtighed. Han udvikler visuelle koncepter, der skaber stærk brand-resonans gennem ressourcebesparende designprincipper.',
       img: andreas
     }
   ];
 
-  const values = [
-    { title: 'Lynhurtig', icon: <AboutIcon type="fast" />, desc: 'Vi fjerner tunge scripts og overflødig kode for at sikre, at jeres site loader på et splitsekund.' },
-    { title: 'Transparent', icon: <AboutIcon type="transparent" />, desc: 'Ingen skjulte data-omkostninger eller "greenwashing". Vi leverer målbare resultater.' },
-    { title: 'Menneskelig', icon: <AboutIcon type="human" />, desc: 'UX der er intuitivt og inkluderende for alle, skabt med respekt for brugerens tid og båndbredde.' }
-  ];
+
 
   const sliderItems = [
     {
       title: "Vi beskatter os selv",
-      subtitle: "(1 % for the Planet)",
       text: "Vi er stolte medlemmer af \"1 % for the Planet\". Det betyder, at vi hvert år donerer 1 % af vores samlede omsætning til miljøorganisatione, der arbejder for at beskytte klimaet. Det er vores faste, selvvalgte afgift til planeten."
     },
     {
       title: "Et grønnere internet",
-      subtitle: "(Greening the web)",
       text: "Vi udvikler udelukkende efter principper for bæredygtigt webdesign. Vi koder letvægtsløsninger, udregner CO2-aftrykket på alt, hvad vi bygger, og hoster alle websites på energieffektive servere, der drives af 100 % vedvarende energi."
     },
     {
       title: "Plantebaseret mad",
-      subtitle: "(Plant based and healthy)",
       text: "Kødproduktion er en massiv klimabelastning. Derfor serverer vi udelukkende plantebaseret mad til vores firmaarrangementer og kundemøder."
     },
     {
       title: "Genanvendelse",
-      subtitle: "(Second hand appliances)",
       text: "Ny elektronik koster dyrt i klimaregnskabet. Vores hardware skal ikke belaste planeten unødigt. Derfor donerer vi dem videre, til Afrika, så de får et nyt liv."
     },
     {
       title: "En hjælpende hånd",
-      subtitle: "(Gratis hjælp til NGO'er)",
       text: "Vi bruger vores digitale og visuelle kompetencer til at skabe genlyd for planeten. Derfor hjælper vi jævnligt miljøorganisationer med at producere animationer og visuelt indhold uden beregning."
     },
     {
       title: "Grøn transport",
-      subtitle: "(Free city cycles & cykeldage)",
       text: "Vi opmuntrer til grøn transport ved at stille gratis el-cykler til rådighed og holde faste \"cykeldage\", hvor vi sammen udforsker naturen og holder hjulene kørende for klimaet."
     }
   ];
@@ -145,9 +112,14 @@ const About = () => {
     };
   }, []);
 
-
   return (
     <main className="about-page" style={{ paddingBottom: '12rem' }}>
+      <Helmet>
+        <title>Om os | Mød Teamet bag æcco</title>
+        <meta name="description" content="Mød Teemo, Kenneth og Andreas. Vi er et bureau dedikeret til at bevise, at digital vækst kan gå hånd i hånd med bæredygtighed." />
+        <meta property="og:title" content="Om æcco - Digital Resonans og Bæredygtighed" />
+        <link rel="canonical" href="https://aecco-agency.web.app/about" />
+      </Helmet>
       <div className="container">
         <section className="about-manifesto" style={{ paddingTop: '4rem', paddingBottom: '6rem' }}>
           <p className="manifesto-quote">
@@ -199,7 +171,6 @@ const About = () => {
                     </div>
                   </div>
                   <div className="sust-slider-content">
-                    <p className="sust-subtitle">{item.subtitle}</p>
                     <p className="sust-text">{item.text}</p>
                   </div>
                 </div>
@@ -277,20 +248,6 @@ const About = () => {
         </div>
       </div>
 
-      <div className="container">
-        <section className="about-values-section" style={{ marginTop: '4rem' }}>
-          <div className="values-grid">
-            {values.map((v, i) => (
-              <div key={i} className="value-item">
-                <div className="value-icon">{v.icon}</div>
-                <h3>{v.title}</h3>
-                <p>{v.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-
         <section className="about-cta">
           <div className="cta-container">
             <div className="cta-left">
@@ -311,7 +268,6 @@ const About = () => {
             </div>
           </div>
         </section>
-      </div>
     </main>
   );
 };
