@@ -192,11 +192,15 @@ const Home = () => {
         <div className="container">
           <Link to="/about" className="teemo-quote-card" style={{ textDecoration: 'none', color: 'inherit' }}>
             <div className="quote-left">
-              <h2 className="quote-main-text">"Mit designfokus ligger altid i spændingsfeltet mellem en gnidningsfri brugerrejse (UX) og strategisk placerede konverteringselementer. En logisk arkitektur er for mig fundamentet for ethvert salg."</h2>
+              <h2 className="quote-main-text">"Jeg designer digitale løsninger, hvor brugervenlighed og forretningsmål smelter sammen. En enkel og logisk struktur er fundamentet for at skabe resultater, der kan mærkes."</h2>
               <div className="quote-author">
                 <div className="author-info">
                   <h4 className="author-name">Teemo Skov Hansen</h4>
                   <p className="author-role">Innovator @ æcco</p>
+                  <div className="quote-cta">
+                    <span>Oplev vores rejse</span>
+                    <span className="cta-arrow">→</span>
+                  </div>
                 </div>
                 <img src={logo} alt="æcco" className="quote-logo" />
               </div>

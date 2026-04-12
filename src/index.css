@@ -3319,6 +3319,15 @@ body.eco-low .eco-btn.active {
   margin: 0 auto;
   overflow: hidden;
   box-shadow: 0 30px 100px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.teemo-quote-card:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.4);
+  border-color: var(--accent-lumen-green);
 }
 
 .quote-left {
@@ -3356,6 +3365,27 @@ body.eco-low .eco-btn.active {
   font-size: 0.9rem;
   color: #FFFCDF;
   font-weight: 600;
+}
+
+.quote-cta {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent-lumen-green);
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-arrow {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.teemo-quote-card:hover .cta-arrow {
+  transform: translateX(8px);
 }
 
 .quote-logo {
