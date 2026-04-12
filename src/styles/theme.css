@@ -2,8 +2,8 @@
 :root {
   /* Colors */
   --bg-deep-carbon: #343434;
-  --text-pure-white: #FFFBD8;
-  --text-muted-grey: #FFFBD8;
+  --text-pure-white: #FFFCDF;
+  --text-muted-grey: #FFFCDF;
   --accent-lumen-green: #9AD128;
   --accent-lumen-green-glow: rgba(154, 209, 40, 0.4);
   
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gradient text utility – use specifically instead of globally on all tags */
 .text-gradient {
-  background: linear-gradient(to bottom, #FFFBD8, #FFFBD8);
+  background: linear-gradient(to bottom, #FFFCDF, #FFFCDF);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;

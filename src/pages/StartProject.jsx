@@ -97,14 +97,14 @@ const StartProject = () => {
           margin: '6rem auto 0',
           background: '#868686',
           borderRadius: '50px',
-          border: '1px solid #FFFBD8'
+          border: '1px solid #FFFCDF'
         }}>
           <p style={{
             opacity: 1,
             fontSize: '1.2rem',
             lineHeight: '1.6',
             margin: 0,
-            color: '#FFFBD8'
+            color: '#FFFCDF'
           }}>
             Alle priser er inkl moms. man kan altid foretage fravalg i pakkerne ved at{' '}
             <Link to="/book-intro" style={{

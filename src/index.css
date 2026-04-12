@@ -104,7 +104,7 @@ body.hide-nav .eco-toggle-bar {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   white-space: nowrap;
-  box-shadow: 3px 3px 0px #FFFBD8;
+  box-shadow: 3px 3px 0px #FFFCDF;
   display: inline-flex;
   align-items: center;
   gap: 0.8rem;
@@ -113,7 +113,7 @@ body.hide-nav .eco-toggle-bar {
 
 .contact-btn:hover {
   transform: translate(3px, 3px);
-  box-shadow: 0px 0px 0px #FFFBD8;
+  box-shadow: 0px 0px 0px #FFFCDF;
 }
 
 /* Hero Section */
@@ -207,7 +207,7 @@ body.hide-nav .eco-toggle-bar {
   cursor: pointer;
   transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
   white-space: nowrap;
-  box-shadow: 4px 4px 0px #FFFBD8;
+  box-shadow: 4px 4px 0px #FFFCDF;
   font-size: 1.1rem;
   text-decoration: none;
 }
@@ -218,7 +218,7 @@ body.hide-nav .eco-toggle-bar {
 .buy-package-btn:hover,
 .card-v2-cta-btn:hover {
   transform: translate(4px, 4px);
-  box-shadow: 0px 0px 0px #FFFBD8;
+  box-shadow: 0px 0px 0px #FFFCDF;
 }
 
 .buy-template-btn .btn-arrow,
@@ -489,7 +489,7 @@ body.hide-nav .eco-toggle-bar {
 
 .process-steps-indicator {
   padding-left: 1.2rem;
-  border-left: 2px solid #FFFBD8;
+  border-left: 2px solid #FFFCDF;
   margin: 2.5rem 0;
 }
 
@@ -538,7 +538,7 @@ body.hide-nav .eco-toggle-bar {
 .process-card {
   position: sticky;
   background: #868686;
-  border: 1px solid #FFFBD8;
+  border: 1px solid #FFFCDF;
   border-radius: 50px;
   padding: 3.5rem 3rem;
   box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5);
@@ -592,15 +592,15 @@ body.hide-nav .eco-toggle-bar {
 }
 
 .process-card h3 {
-  color: #FFFBD8 !important;
+  color: #FFFCDF !important;
   font-size: 1.6rem;
   margin: 0 0 1rem 0;
   background: none !important;
-  -webkit-text-fill-color: #FFFBD8 !important;
+  -webkit-text-fill-color: #FFFCDF !important;
 }
 
 .process-card p {
-  color: #FFFBD8 !important;
+  color: #FFFCDF !important;
   font-size: 1.05rem;
   line-height: 1.7;
 }
@@ -626,7 +626,7 @@ body.hide-nav .eco-toggle-bar {
   background: #868686;
   border-radius: 65px;
   padding: 4rem 3.5rem;
-  border: 1px solid #FFFBD8;
+  border: 1px solid #FFFCDF;
   box-shadow: 0 40px 100px rgba(0, 0, 0, 0.4);
 }
 
@@ -643,7 +643,7 @@ body.hide-nav .eco-toggle-bar {
 }
 
 .form-group label {
-  color: #FFFBD8 !important;
+  color: #FFFCDF !important;
   font-weight: 800;
   font-size: 1rem;
   letter-spacing: -0.5px;
@@ -652,10 +652,10 @@ body.hide-nav .eco-toggle-bar {
 
 .glass-input {
   background: #343434 !important;
-  border: 2px solid #FFFBD8;
+  border: 2px solid #FFFCDF;
   border-radius: 20px;
   padding: 1.2rem 1.5rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-size: 1.1rem;
   transition: all 0.3s ease;
 }
@@ -668,7 +668,7 @@ body.hide-nav .eco-toggle-bar {
 }
 
 .glass-input::placeholder {
-  color: #FFFBD8;
+  color: #FFFCDF;
 }
 
 /* Sustainability Bubble Chart Chart */
@@ -684,13 +684,13 @@ body.hide-nav .eco-toggle-bar {
 }
 
 .bubble-chart-header {
-  border-bottom: 1px solid #FFFBD8;
+  border-bottom: 1px solid #FFFCDF;
   padding-bottom: 1rem;
   margin-bottom: 2rem;
 }
 
 .bubble-chart-header .label {
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-size: 0.9rem;
   opacity: 0.8;
   text-transform: lowercase;
@@ -698,7 +698,7 @@ body.hide-nav .eco-toggle-bar {
 }
 
 .bubble-chart-header h3 {
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-size: 1.8rem;
   font-weight: 800;
   margin: 0.2rem 0 0;
@@ -717,9 +717,9 @@ body.hide-nav .eco-toggle-bar {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-weight: 950;
-  border: 4px solid #FFFBD8;
+  border: 4px solid #FFFCDF;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
   position: relative;
   flex-shrink: 0;
@@ -767,7 +767,7 @@ body.hide-nav .eco-toggle-bar {
   display: flex;
   align-items: center;
   gap: 0.6rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-weight: 600;
   font-size: 0.95rem;
   opacity: 0.9;
@@ -834,7 +834,7 @@ body.hide-nav .eco-toggle-bar {
   font-size: 0.95rem;
   /* Mindre label for at matche den nye skala */
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-top: 0.2rem;
   letter-spacing: -0.2px;
 }
@@ -1373,7 +1373,7 @@ body.hide-nav .eco-toggle-bar {
 .glass-input {
   width: 100%;
   padding: 1rem;
-  background: #FFFBD8;
+  background: #FFFCDF;
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   color: white;
@@ -1418,16 +1418,16 @@ body.hide-nav .eco-toggle-bar {
   cursor: pointer;
   border: 2px solid #161616;
   border-radius: 12px;
-  background: #FFFBD8;
-  color: #FFFBD8;
+  background: #FFFCDF;
+  color: #FFFCDF;
   font-weight: 700;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 2px 2px 0px #FFFBD8;
+  box-shadow: 2px 2px 0px #FFFCDF;
 }
 
 .time-btn:hover:not(:disabled) {
   transform: translate(2px, 2px);
-  box-shadow: 0px 0px 0px #FFFBD8;
+  box-shadow: 0px 0px 0px #FFFCDF;
   border-color: var(--accent-lumen-green);
 }
 
@@ -1435,7 +1435,7 @@ body.hide-nav .eco-toggle-bar {
   background: var(--accent-lumen-green);
   color: #161616;
   border-color: #161616;
-  box-shadow: 0px 0px 0px #FFFBD8;
+  box-shadow: 0px 0px 0px #FFFCDF;
 }
 
 .time-btn:disabled {
@@ -1876,7 +1876,7 @@ body.hide-nav .eco-toggle-bar {
 .eco-toggle-label {
   font-size: 0.75rem;
   font-weight: 600;
-  color: #FFFBD8;
+  color: #FFFCDF;
   text-transform: uppercase;
   letter-spacing: 1px;
   white-space: nowrap;
@@ -1895,7 +1895,7 @@ body.hide-nav .eco-toggle-bar {
   border: 1px solid transparent;
   border-radius: 50px;
   background: transparent;
-  color: #FFFBD8;
+  color: #FFFCDF;
   /* Lysere for kontrast mod #868686 */
   font-size: 0.8rem;
   font-weight: 500;
@@ -1917,7 +1917,7 @@ body.hide-nav .eco-toggle-bar {
 
 .eco-btn:hover {
   color: var(--text-pure-white);
-  border-color: #FFFBD8;
+  border-color: #FFFCDF;
 }
 
 .eco-btn.active {
@@ -2128,7 +2128,7 @@ body.eco-low .eco-btn.active {
 .feature-list li {
   padding: 0.6rem 0;
   font-size: 1.1rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-weight: 700;
   opacity: 1;
   display: flex;
@@ -2157,7 +2157,7 @@ body.eco-low .eco-btn.active {
   line-height: 1;
   letter-spacing: -0.04em;
   margin-bottom: 2rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -2575,7 +2575,7 @@ body.eco-low .eco-btn.active {
 .faq-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #FFFBD8;
+  color: #FFFCDF;
 }
 
 .faq-list {
@@ -2606,12 +2606,12 @@ body.eco-low .eco-btn.active {
   align-items: center;
   font-weight: 500;
   font-size: 1.1rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
 }
 
 .faq-toggle {
   font-size: 2rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-weight: 300;
   transition: transform 0.3s ease;
 }
@@ -2623,7 +2623,7 @@ body.eco-low .eco-btn.active {
 
 .faq-answer {
   padding: 0 3.5rem 2.5rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   line-height: 1.7;
   font-size: 1.05rem;
 }
@@ -2768,7 +2768,7 @@ body.eco-low .eco-btn.active {
   /* Lidt mindre tekst i de lavere kort */
   line-height: 1.25;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 0.5rem;
   letter-spacing: -0.5px;
 }
@@ -2776,7 +2776,7 @@ body.eco-low .eco-btn.active {
 .team-desc {
   font-size: 0.85rem;
   line-height: 1.5;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 1rem;
 }
 
@@ -2811,7 +2811,7 @@ body.eco-low .eco-btn.active {
   font-size: 2.2rem;
   line-height: 1.4;
   font-weight: 700;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 2rem;
   font-style: italic;
 }
@@ -2838,7 +2838,7 @@ body.eco-low .eco-btn.active {
   background: rgba(40, 40, 40, 0.4); /* Subtilt overlay */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid #FFFBD8;
+  border: 1px solid #FFFCDF;
   border-radius: 40px;
   transition: all 0.4s ease;
 }
@@ -2866,14 +2866,14 @@ body.eco-low .eco-btn.active {
 .value-item h3 {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 1.2rem;
   background: none;
   -webkit-text-fill-color: initial;
 }
 
 .value-item p {
-  color: #FFFBD8;
+  color: #FFFCDF;
   line-height: 1.7;
   font-size: 1.05rem;
 }
@@ -2930,13 +2930,13 @@ body.eco-low .eco-btn.active {
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   background: none;
   -webkit-text-fill-color: initial;
 }
 
 .sust-card p {
-  color: #FFFBD8;
+  color: #FFFCDF;
   line-height: 1.6;
   font-size: 1.1rem;
 }
@@ -3012,7 +3012,7 @@ body.eco-low .eco-btn.active {
 .sust-option-card {
   position: sticky;
   background: #868686;
-  border: 1px solid #FFFBD8;
+  border: 1px solid #FFFCDF;
   border-radius: 50px;
   padding: 4rem 3rem;
   box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.5);
@@ -3034,7 +3034,7 @@ body.eco-low .eco-btn.active {
 
 .card-divider-vertical {
   width: 1px;
-  background: #FFFBD8;
+  background: #FFFCDF;
   margin: 4rem 0;
 }
 
@@ -3066,7 +3066,7 @@ body.eco-low .eco-btn.active {
 .card-description {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #FFFBD8;
+  color: #FFFCDF;
   max-width: 90%;
 }
 
@@ -3074,7 +3074,7 @@ body.eco-low .eco-btn.active {
   font-size: 1.8rem;
   font-weight: 800;
   margin-bottom: 2rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
 }
 
 .card-logo-mini {
@@ -3113,7 +3113,7 @@ body.eco-low .eco-btn.active {
 .option-label {
   font-size: 1.8rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   text-transform: capitalize;
   opacity: 1;
 }
@@ -3122,13 +3122,13 @@ body.eco-low .eco-btn.active {
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 1rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
 }
 
 .option-divider {
   width: 100%;
   height: 2px;
-  background: #FFFBD8;
+  background: #FFFCDF;
   margin-bottom: 2rem;
 }
 
@@ -3219,7 +3219,7 @@ body.eco-low .eco-btn.active {
 .block-title {
   font-size: 3.5rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin: 1.5rem 0;
   line-height: 1.1;
   background: none;
@@ -3227,7 +3227,7 @@ body.eco-low .eco-btn.active {
 }
 
 .block-desc {
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 3rem;
@@ -3247,13 +3247,13 @@ body.eco-low .eco-btn.active {
   font-size: 1.1rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 3px 3px 0px #FFFBD8;
+  box-shadow: 3px 3px 0px #FFFCDF;
   text-decoration: none;
 }
 
 .design-udkast-btn:hover {
   transform: translate(3px, 3px);
-  box-shadow: 0px 0px 0px #FFFBD8, 0 0 25px rgba(154, 209, 40, 0.4);
+  box-shadow: 0px 0px 0px #FFFCDF, 0 0 25px rgba(154, 209, 40, 0.4);
 }
 
 .design-udkast-btn .btn-arrow {
@@ -3283,11 +3283,11 @@ body.eco-low .eco-btn.active {
   justify-content: center;
   position: relative;
   overflow: hidden;
-  border: 1px solid #FFFBD8;
+  border: 1px solid #FFFCDF;
 }
 
 .img-placeholder .placeholder-text {
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-weight: 900;
   font-size: 1.2rem;
   letter-spacing: 2px;
@@ -3331,7 +3331,7 @@ body.eco-low .eco-btn.active {
 .quote-main-text {
   font-size: 1.65rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   line-height: 1.4;
   margin-bottom: 3rem;
   font-style: italic;
@@ -3348,13 +3348,13 @@ body.eco-low .eco-btn.active {
 .author-name {
   font-size: 1.2rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 0.3rem;
 }
 
 .author-role {
   font-size: 0.9rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-weight: 600;
 }
 
@@ -3433,7 +3433,7 @@ body.eco-low .eco-btn.active {
 .clients-header h1 {
   font-size: 5.5rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   line-height: 1;
   text-transform: none;
   /* Bevar original casing */
@@ -3466,7 +3466,7 @@ body.eco-low .eco-btn.active {
   display: flex;
   height: 520px;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid #FFFBD8;
+  border: 1px solid #FFFCDF;
   margin-bottom: 2rem;
 }
 
@@ -3484,7 +3484,7 @@ body.eco-low .eco-btn.active {
   overflow: hidden;
   margin-bottom: 0.5rem;
   transition: transform 0.4s ease;
-  border: 1px solid #FFFBD8;
+  border: 1px solid #FFFCDF;
 }
 
 .card-visual-side {
@@ -3585,21 +3585,21 @@ body.eco-low .eco-btn.active {
 .client-title-v2 {
   font-size: 2.2rem;
   font-weight: 850;
-  color: #FFFBD8;
+  color: #FFFCDF;
   letter-spacing: -0.5px;
   margin: 0 0 0.5rem 0;
 }
 
 .client-subtitle-v2 {
   font-size: 1rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   opacity: 0.9;
 }
 
 .package-label-v2 {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 1.2rem;
 }
 
@@ -3644,7 +3644,7 @@ body.eco-low .eco-btn.active {
 .card-v2-title {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 0.8rem;
   line-height: 1;
   letter-spacing: -1.5px;
@@ -3654,7 +3654,7 @@ body.eco-low .eco-btn.active {
 
 .card-v2-subtitle {
   font-size: 1.4rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-weight: 600;
   margin-bottom: 2rem;
 }
@@ -3706,7 +3706,7 @@ body.eco-low .eco-btn.active {
   flex: 1;
   position: relative;
   background: #161616;
-  border-left: 1px solid #FFFBD8;
+  border-left: 1px solid #FFFCDF;
 }
 
 .card-v2-image-box {
@@ -3766,7 +3766,7 @@ body.eco-low .eco-btn.active {
 .technical-side-text span {
   font-size: 0.7rem;
   font-weight: 400;
-  color: #FFFBD8;
+  color: #FFFCDF;
   text-transform: none;
   line-height: 1.2;
   white-space: nowrap;
@@ -3809,7 +3809,7 @@ body.eco-low .eco-btn.active {
   right: 1.5rem;
   font-size: 2rem;
   font-weight: 900;
-  color: #FFFBD8;
+  color: #FFFCDF;
   opacity: 0.85;
   writing-mode: vertical-rl;
   text-transform: lowercase;
@@ -3833,7 +3833,7 @@ body.eco-low .eco-btn.active {
 .testimonials-static-title {
   font-size: 2.8rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 5rem;
   text-align: left;
   letter-spacing: -1px;
@@ -3878,7 +3878,7 @@ body.eco-low .eco-btn.active {
   flex-direction: column;
   min-height: 460px;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid #FFFBD8;
+  border: 1px solid #FFFCDF;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
@@ -3890,7 +3890,7 @@ body.eco-low .eco-btn.active {
 .testimonial-v3-title {
   font-size: 1.8rem;
   font-weight: 900;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 2.5rem;
   text-transform: uppercase;
   line-height: 1.1;
@@ -3902,7 +3902,7 @@ body.eco-low .eco-btn.active {
 .testimonial-v3-quote {
   font-size: 1.1rem;
   line-height: 1.5;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: auto;
   font-weight: 500;
 }
@@ -3918,7 +3918,7 @@ body.eco-low .eco-btn.active {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  border: 2px solid #FFFBD8;
+  border: 2px solid #FFFCDF;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   flex-shrink: 0;
 }
@@ -3956,13 +3956,13 @@ body.eco-low .eco-btn.active {
 
 .v3-name {
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-size: 1.2rem;
 }
 
 .v3-role {
   font-size: 0.95rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -3995,7 +3995,7 @@ body.eco-low .eco-btn.active {
 .testimonials-header h2 {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   text-transform: uppercase;
 }
 
@@ -4010,18 +4010,18 @@ body.eco-low .eco-btn.active {
   border-radius: 50%;
   border: 2px solid #161616;
   background: transparent;
-  color: #FFFBD8;
+  color: #FFFCDF;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  box-shadow: 3px 3px 0px #FFFBD8;
+  box-shadow: 3px 3px 0px #FFFCDF;
 }
 
 .nav-btn:hover {
   transform: translate(3px, 3px);
-  box-shadow: 0px 0px 0px #FFFBD8;
+  box-shadow: 0px 0px 0px #FFFCDF;
   border-color: var(--accent-lumen-green);
 }
 
@@ -4049,13 +4049,13 @@ body.eco-low .eco-btn.active {
 
 .testimonial-card-v2:hover {
   transform: scale(1.02);
-  background: #FFFBD8;
+  background: #FFFCDF;
 }
 
 .testimonial-title {
   font-size: 1.8rem;
   font-weight: 900;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 2rem;
   text-transform: uppercase;
   line-height: 1.1;
@@ -4064,7 +4064,7 @@ body.eco-low .eco-btn.active {
 .testimonial-quote {
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: auto;
 }
 
@@ -4086,7 +4086,7 @@ body.eco-low .eco-btn.active {
 .author-meta h4 {
   font-size: 1rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 0.1rem;
 }
 
@@ -4270,7 +4270,7 @@ body.eco-low video {
 body.eco-low .text-gradient {
   background: none !important;
   -webkit-text-fill-color: initial !important;
-  color: #FFFBD8 !important;
+  color: #FFFCDF !important;
 }
 
 body.eco-low {
@@ -4318,7 +4318,7 @@ body.eco-low {
 .sust-slider-header h3 {
   font-size: 1.4rem;
   font-weight: 800;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   text-align: center;
@@ -4340,7 +4340,7 @@ body.eco-low {
 
 .divider-line {
   height: 1px;
-  background: #FFFBD8;
+  background: #FFFCDF;
   flex-grow: 1;
 }
 
@@ -4355,7 +4355,7 @@ body.eco-low {
 }
 
 .sust-subtitle {
-  color: #FFFBD8;
+  color: #FFFCDF;
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
@@ -4366,7 +4366,7 @@ body.eco-low {
 }
 
 .sust-text {
-  color: #FFFBD8;
+  color: #FFFCDF;
   line-height: 1.7;
   font-size: 1.05rem;
   max-width: 400px;
@@ -4429,7 +4429,7 @@ body.eco-low {
 .slider-nav-btn.disabled {
   opacity: 0.2;
   cursor: default;
-  border-color: #FFFBD8;
+  border-color: #FFFCDF;
 }
 
 /* About CTA New Design */
@@ -4469,17 +4469,17 @@ body.eco-low {
 .cta-heading {
   font-size: clamp(2.2rem, 5vw, 3.5rem) !important;
   font-weight: 850;
-  color: #FFFBD8 !important;
+  color: #FFFCDF !important;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   max-width: 800px;
   background: none !important;
-  -webkit-text-fill-color: #FFFBD8 !important;
+  -webkit-text-fill-color: #FFFCDF !important;
 }
 
 .cta-subtext {
   font-size: 1.25rem;
-  color: #FFFBD8 !important;
+  color: #FFFCDF !important;
   margin-bottom: 3rem;
 }
 
@@ -4533,7 +4533,7 @@ body.eco-low {
   font-size: clamp(1.8rem, 4vw, 2.8rem) !important;
   font-weight: 850;
   line-height: 1.1;
-  color: #FFFBD8 !important;
+  color: #FFFCDF !important;
   margin: 0;
   text-align: left;
 }
@@ -4576,13 +4576,13 @@ body.eco-low {
   font-weight: 850;
   line-height: 1.5 !important; /* Justeret ned for bedre balance */
   margin-bottom: 2rem;
-  color: #FFFBD8;
+  color: #FFFCDF;
 }
 
 .block-desc {
   font-size: 1.15rem;
   line-height: 1.8;
-  color: #FFFBD8;
+  color: #FFFCDF;
   margin-bottom: 3rem;
   max-width: 600px;
 }
