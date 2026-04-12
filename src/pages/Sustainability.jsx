@@ -392,9 +392,9 @@ const Sustainability = () => {
                   <div style={{ width: '56px', height: '56px', background: '#1a1a1a', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     {/* Raster image icon - mountains & sun */}
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                      <rect x="2" y="4" width="28" height="24" rx="3" stroke="#FFFFFF" strokeWidth="1.5"/>
+                      <rect x="2" y="4" width="28" height="24" rx="3" stroke="#FFFCDF" strokeWidth="1.5"/>
                       <circle cx="10" cy="12" r="3" fill="rgba(255,200,50,0.5)"/>
-                      <path d="M2 22 L10 14 L16 20 L22 13 L30 22 L30 25 C30 26.5 28.5 28 27 28 L5 28 C3.5 28 2 26.5 2 25 Z" fill="#FFFFFF" stroke="#FFFFFF" strokeWidth="1"/>
+                      <path d="M2 22 L10 14 L16 20 L22 13 L30 22 L30 25 C30 26.5 28.5 28 27 28 L5 28 C3.5 28 2 26.5 2 25 Z" fill="#FFFCDF" stroke="#FFFCDF" strokeWidth="1"/>
                     </svg>
                   </div>
                   <div style={{ flex: 1 }}>
