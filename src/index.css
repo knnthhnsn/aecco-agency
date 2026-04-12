@@ -4290,12 +4290,20 @@ body.eco-low .contact-card,
 body.eco-low .menu-open .nav-links-wrapper,
 body.eco-low .testimonial-card-v2,
 body.eco-low .testimonial-card-v3,
-body.eco-low .sust-option-card,
 body.eco-low .eco-toggle-bar {
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
   background: #111111 !important;
   border: 1px solid rgba(255, 255, 255, 0.12) !important;
+}
+
+body.eco-low .sust-option-card,
+body.eco-low .bubble-chart-container,
+body.eco-low .gauge-chart-container {
+  background: transparent !important;
+  border: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
 }
 
 /* OLED-besparelse for Lav tilstand: DÃƒÂ¦mp store lys-kilder (billeder) til 80% opacity */
