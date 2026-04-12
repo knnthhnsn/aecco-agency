@@ -3339,7 +3339,7 @@ body.eco-low .eco-btn.active {
 
 .quote-main-text {
   font-size: 1.65rem;
-  font-weight: 800;
+  font-weight: 500;
   color: #FFFCDF;
   line-height: 1.4;
   margin-bottom: 3rem;
@@ -3379,12 +3379,15 @@ body.eco-low .eco-btn.active {
   letter-spacing: 1px;
 }
 
-.cta-arrow {
-  display: inline-block;
+.cta-arrow-svg {
+  height: 12px;
+  width: auto;
   transition: transform 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(86%) sepia(21%) architecture(26%) hue-rotate(24deg) brightness(108%) contrast(101%);
+  /* Dette filter matcher din cremede farve #FFFCDF hvis muligt, ellers bruger vi bare SVG'ens egen farve */
 }
 
-.teemo-quote-card:hover .cta-arrow {
+.teemo-quote-card:hover .cta-arrow-svg {
   transform: translateX(8px);
 }
 

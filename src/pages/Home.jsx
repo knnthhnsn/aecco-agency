@@ -199,7 +199,7 @@ const Home = () => {
                   <p className="author-role">Innovator @ æcco</p>
                   <div className="quote-cta">
                     <span>Oplev vores rejse</span>
-                    <span className="cta-arrow">→</span>
+                    <img src={pil} alt="pil" className="cta-arrow-svg" />
                   </div>
                 </div>
                 <img src={logo} alt="æcco" className="quote-logo" />
