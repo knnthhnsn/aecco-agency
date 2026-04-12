@@ -126,7 +126,7 @@ const About = () => {
             "I en verden oversvømmet af digital støj, <br />bygger vi de platforme, der fortjener at blive hørt."
           </p>
           <div style={{ maxWidth: '750px', margin: '3rem auto 0' }}>
-            <p style={{ color: 'rgba(255,251,216,0.6)', lineHeight: 1.8, fontSize: '1.15rem' }}>
+            <p style={{ color: '#FFFBD8', lineHeight: 1.8, fontSize: '1.15rem' }}>
               æcco er født ud fra en vision om, at digital vækst ikke behøver koste planeten. 
               Vi fjerner vægten fra de eksisterende løsninger, optimerer den digitale puls og skaber løsninger, der giver genlyd hos dem, der betyder mest.
             </p>
@@ -232,7 +232,7 @@ const About = () => {
                     <img src={member.img} alt={member.name} loading="lazy" />
                   </div>
                   <div className="team-info">
-                    <h4 style={{ color: 'rgba(255,251,216,0.5)', fontSize: '0.85rem', marginBottom: '0.6rem', textTransform: 'uppercase', letterSpacing: '3px', fontWeight: '700' }}>
+                    <h4 style={{ color: '#FFFBD8', fontSize: '0.85rem', marginBottom: '0.6rem', textTransform: 'uppercase', letterSpacing: '3px', fontWeight: '700' }}>
                       {member.name}
                     </h4>
                     <h3 className="team-title">{member.title}</h3>

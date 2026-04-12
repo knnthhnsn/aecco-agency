@@ -105,7 +105,7 @@ const Sustainability = () => {
               </p>
             </div>
 
-            <div className="card-divider-vertical" style={{ background: 'rgba(255,251,216,0.4)', width: '2px', opacity: 1, margin: '2rem 0' }}></div>
+            <div className="card-divider-vertical" style={{ background: '#FFFBD8', width: '2px', opacity: 1, margin: '2rem 0' }}></div>
 
             <div className="card-right" style={{ paddingTop: '2rem' }}>
               <div style={{ paddingLeft: '15px', marginBottom: '1.5rem', textAlign: 'left' }}>
@@ -139,8 +139,8 @@ const Sustainability = () => {
                     const y = 240 - (val / 8000) * 220;
                     return (
                       <React.Fragment key={val}>
-                        <line x1="-10" y1={y} x2="380" y2={y} stroke="rgba(255,251,216,0.3)" strokeWidth="2" />
-                        <text x="-25" y={y + 5} fill="rgba(255,251,216,0.8)" fontSize="12" fontWeight="700" textAnchor="end">
+                        <line x1="-10" y1={y} x2="380" y2={y} stroke="#FFFBD8" strokeWidth="2" />
+                        <text x="-25" y={y + 5} fill="#FFFBD8" fontSize="12" fontWeight="700" textAnchor="end">
                           {val === 0 ? '0' : val === 8000 ? '8k' : val === 6000 ? '6k' : val === 4000 ? '4k' : '2k'}
                         </text>
                       </React.Fragment>
@@ -159,7 +159,7 @@ const Sustainability = () => {
                   {/* End Marker Red */}
                   <motion.g initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 2.2 }}>
                     <circle cx="350" cy="20" r="16" fill="#FF0000" stroke="#FFFBD8" strokeWidth="4" />
-                    <text x="375" y="10" fill="rgba(255,251,216,0.8)" fontSize="16" fontWeight="900">7,933</text>
+                    <text x="375" y="10" fill="#FFFBD8" fontSize="16" fontWeight="900">7,933</text>
                   </motion.g>
 
                   {/* Black (Værste) */}
@@ -173,7 +173,7 @@ const Sustainability = () => {
                   {/* End Marker Black */}
                   <motion.g initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 2.4 }}>
                     <circle cx="350" cy="155" r="16" fill="#000" stroke="#FFFBD8" strokeWidth="4" />
-                    <text x="375" y="145" fill="rgba(255,251,216,0.8)" fontSize="16" fontWeight="900">2,967</text>
+                    <text x="375" y="145" fill="#FFFBD8" fontSize="16" fontWeight="900">2,967</text>
                   </motion.g>
 
                   {/* æcco (Grøn) */}
@@ -187,7 +187,7 @@ const Sustainability = () => {
                   {/* End Marker Green */}
                   <motion.g initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ delay: 2.6 }}>
                     <circle cx="350" cy="210" r="16" fill="var(--accent-lumen-green)" stroke="#FFFBD8" strokeWidth="4" />
-                    <text x="375" y="200" fill="rgba(255,251,216,0.8)" fontSize="16" fontWeight="900">1,137</text>
+                    <text x="375" y="200" fill="#FFFBD8" fontSize="16" fontWeight="900">1,137</text>
                   </motion.g>
 
                   {/* X-Axis Labels - Bolder */}
@@ -219,7 +219,7 @@ const Sustainability = () => {
               <div className="card-left-header">
                 <h3>Insights</h3>
               </div>
-              <p className="card-description" style={{ fontSize: '1.2rem', fontWeight: '700', color: 'rgba(255,251,216,0.9)' }}>
+              <p className="card-description" style={{ fontSize: '1.2rem', fontWeight: '700', color: '#FFFBD8' }}>
                 74% af forbrugerne vil hellere handle hos brands, der tager bæredygtige valg.
               </p>
             </div>
@@ -317,7 +317,7 @@ const Sustainability = () => {
                     <path 
                       d="M20,100 A80,80 0 0,1 180,100" 
                       fill="none" 
-                      stroke="rgba(255,251,216,0.05)" 
+                      stroke="#FFFBD8" 
                       strokeWidth="20" 
                       strokeLinecap="round" 
                     />
@@ -388,25 +388,25 @@ const Sustainability = () => {
 
               <div style={{ flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '1rem', marginTop: '1rem' }}>
                 {/* Legacy JPG - Heavy */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: 'rgba(255,251,216,0.04)', padding: '1rem 1.2rem', borderRadius: '20px', border: '1px solid rgba(255,251,216,0.06)' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', background: '#FFFBD8', padding: '1rem 1.2rem', borderRadius: '20px', border: '1px solid #FFFBD8' }}>
                   <div style={{ width: '56px', height: '56px', background: '#1a1a1a', borderRadius: '14px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                     {/* Raster image icon - mountains & sun */}
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                      <rect x="2" y="4" width="28" height="24" rx="3" stroke="rgba(255,251,216,0.2)" strokeWidth="1.5"/>
+                      <rect x="2" y="4" width="28" height="24" rx="3" stroke="#FFFBD8" strokeWidth="1.5"/>
                       <circle cx="10" cy="12" r="3" fill="rgba(255,200,50,0.5)"/>
-                      <path d="M2 22 L10 14 L16 20 L22 13 L30 22 L30 25 C30 26.5 28.5 28 27 28 L5 28 C3.5 28 2 26.5 2 25 Z" fill="rgba(255,251,216,0.08)" stroke="rgba(255,251,216,0.15)" strokeWidth="1"/>
+                      <path d="M2 22 L10 14 L16 20 L22 13 L30 22 L30 25 C30 26.5 28.5 28 27 28 L5 28 C3.5 28 2 26.5 2 25 Z" fill="#FFFBD8" stroke="#FFFBD8" strokeWidth="1"/>
                     </svg>
                   </div>
                   <div style={{ flex: 1 }}>
                     <span style={{ fontSize: '0.55rem', textTransform: 'uppercase', opacity: 0.4, fontWeight: 700, display: 'block', letterSpacing: '1px' }}>Rasterbillede</span>
                     <span style={{ fontSize: '1rem', color: '#FFFBD8', fontWeight: 800 }}>Høj opl. .JPG</span>
                   </div>
-                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: 'rgba(255,251,216,0.25)', whiteSpace: 'nowrap' }}>4.2 MB</span>
+                  <span style={{ fontSize: '1.3rem', fontWeight: 900, color: '#FFFBD8', whiteSpace: 'nowrap' }}>4.2 MB</span>
                 </div>
 
                 {/* Reduction arrow */}
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.8rem', padding: '0 1rem' }}>
-                  <div style={{ flex: 1, height: '1px', background: 'rgba(255,251,216,0.1)' }}></div>
+                  <div style={{ flex: 1, height: '1px', background: '#FFFBD8' }}></div>
                   <motion.div
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
@@ -416,7 +416,7 @@ const Sustainability = () => {
                   >
                     ↓ 98% REDUKTION
                   </motion.div>
-                  <div style={{ flex: 1, height: '1px', background: 'rgba(255,251,216,0.1)' }}></div>
+                  <div style={{ flex: 1, height: '1px', background: '#FFFBD8' }}></div>
                 </div>
 
                 {/* æcco AVIF - Light */}

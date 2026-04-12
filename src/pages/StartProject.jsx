@@ -97,7 +97,7 @@ const StartProject = () => {
           margin: '6rem auto 0',
           background: '#868686',
           borderRadius: '50px',
-          border: '1px solid rgba(255, 251, 216, 0.12)'
+          border: '1px solid #FFFBD8'
         }}>
           <p style={{
             opacity: 1,
